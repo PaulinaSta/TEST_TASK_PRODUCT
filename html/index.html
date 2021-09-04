@@ -6,9 +6,68 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
+    <header class="header">
+        <nav class="header__navigation navigation">
+            <div class="navigation__background"></div>
+            <div class="navigation__content">
+                <div class="navigation__logo logo">
+                    <p class="logo__text white-text">logo</p>
+                </div>
+                <ul class="navigation__menu menu">
+                    <li class="menu__item"><a href="#" class="menu__link white-text">Categories</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link white-text">Payment</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link white-text">Warranty</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link white-text">Credit</a></li>
+                </ul>
+                <div class="navigation__catalog catalog">
+                    <a href="#" class="catalog__link white-text">Catalog <i class="fas fa-chevron-down catalog__icon"></i></a>
+                </div>
+                <div class="navigation__icons icons">
+                    <a href="#" class="icons__link white-text">
+                        <i class="fas fa-heart icons__icon icons__icon--favorites"></i>
+                    </a>
+                    <a href="#" class="icons__link white-text">
+                        <i class="fas fa-shopping-cart icons__icon icons__icon--shopping-cart"></i>
+                    </a>
+                    <a href="#" class="icons__link white-text">
+                        <i class="fas fa-user icons__icon icons__icon--log-in"></i>
+                    </a>
+                </div>
+            </div>
+        </nav>
+        <div class="header__aside">
+            <ul class="header__direction direction">
+                <li class="direction__item">
+                    <a href="#" class="direction__link white-text">Home <i class="fas fa-caret-right direction__icon"></i></a>
+                </li>
+                <li class="direction__item">
+                    <a href="#" class="direction__link white-text">Categories <i class="fas fa-caret-right direction__icon"></i></a>
+                </li>
+                <li class="direction__item">
+                    <a href="#" class="direction__link direction__link--active white-text">Product card</a>
+                </li>
+            </ul>
+
+            <form class="header__search-form form">
+                <input type="text" placeholder="Product name" class="form__input">
+                <button type="submit" class="form__button"><i class="fas fa-search form__icon"></i></button>
+            </form>
+
+            <div class="header__delivery-service delivery">
+                <a href="#" class="delivery__link">Delivery service <i class="fas fa-truck delivery__icon"></i></a>
+            </div>
+        </div>
+    </header>
 
 </body>
 
