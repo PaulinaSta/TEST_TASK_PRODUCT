@@ -10,7 +10,8 @@ html {
     --opacity-white-30: #ffffff4d;
     --opacity-white-85: #ffffffd9;
     --font-color: #5C5C5C;
-    --opacity-font-color: #5c5c5c66;
+    --opacity-font-color-40: #5c5c5c66;
+    --opacity-font-color-70: #5c5c5cb3;
     --opacity-icon-color: #5c5c5c99;
     position: relative;
 
@@ -34,6 +35,18 @@ a {
 
 ul {
     list-style: none;
+}
+
+.button {
+    all: unset;
+    height: 40px;
+    padding: 0 50px;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 16px;
+    background-color: var(--bgc);
+    cursor: pointer;
+    margin-left: 70px;
 }
 
 .white-text {
@@ -164,7 +177,7 @@ ul {
 .direction__link {
     font-weight: 400;
     font-size: 12px;
-    color: var(--opacity-font-color);
+    color: var(--opacity-font-color-40);
     line-height: 40px;
 }
 
@@ -198,7 +211,7 @@ ul {
 }
 
 ::placeholder {
-    color: var(--opacity-font-color);
+    color: var(--opacity-font-color-40);
 }
 
 .form__button {
@@ -226,9 +239,79 @@ ul {
 }
 
 .testimonials {
-    background-color: #aaa;
     margin-top: 100px;
-    height: 300px;
+}
+
+.testimonials__glide-container {
+    position: relative;
+    padding: 0 70px;
+    height: 226px;
+    margin-bottom: 30px;
+}
+
+.testimonials__glide {
+    position: static;
+    height: 100%;
+}
+
+.testimonials__track {
+    height: 100%;
+}
+
+.testimonials__slides {
+    height: 100%;
+}
+
+.testimonials-slide {
+    padding: 25px 45px;
+}
+
+.testimonials-slide__info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.testimonials-slide__author {
+    font-size: 16px;
+    font-weight: 400;
+    color: #000;
+}
+
+.testimonials-slide__opinion {
+    display: flex;
+    align-items: center;
+}
+
+.testimonials-slide__date {
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--opacity-font-color-40);
+}
+
+.testimonials-slide__stars {
+    margin-left: 10px;
+}
+
+.testimonials-slide__icon {
+    color: var(--green-color);
+    margin-left: 2px;
+}
+
+.testimonials-slide__text {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--opacity-font-color-70);
+}
+
+.glide__arrows--testimonials {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
 }
 
 /* Accessories */
@@ -242,16 +325,16 @@ ul {
     line-height: 40px;
 }
 
-.glide {
+.accessories__glide {
     height: 300px;
     position: static;
 }
 
-.glide__track {
+.accessories__track {
     height: 100%;
 }
 
-.glide__slides {
+.accessories__slides {
     height: 100%;
 }
 
@@ -264,7 +347,7 @@ ul {
     height: 100%;
 }
 
-.glide__arrows {
+.glide__arrows--accessories {
     position: absolute;
     top: 0;
     right: 0;
@@ -288,7 +371,7 @@ ul {
     text-align: center;
 }
 
-.glide__arrow--left {
+.glide__arrows--accessories>.glide__arrow--left {
     margin-right: 50px;
 }
 
@@ -296,11 +379,15 @@ ul {
     font-size: 20px;
 }
 
-.slide {
+
+
+
+
+.accessories-slide {
     position: relative;
 }
 
-.slide__discount {
+.accessories-slide__discount {
     background-color: var(--green-color);
     position: absolute;
     right: 0;
@@ -308,19 +395,19 @@ ul {
     padding: 10px 20px;
 }
 
-.slide__discount-value {
+.accessories-slide__discount-value {
     font-size: 16px;
     font-weight: 500;
 }
 
-.slide__image {
+.accessories-slide__image {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
-.slide__text-container {
+.accessories-slide__text-container {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -328,7 +415,7 @@ ul {
     padding: 20px;
 }
 
-.slide__bold-text {
+.accessories-slide__bold-text {
     display: flex;
     justify-content: space-between;
     font-weight: 700;
@@ -336,7 +423,7 @@ ul {
     color: #000;
 }
 
-.slide__light-text {
+.accessories-slide__light-text {
     display: flex;
     justify-content: space-between;
     font-weight: 400;
@@ -344,7 +431,7 @@ ul {
     color: var(--font-color);
 }
 
-.slide__text--line-through {
+.accessories-slide__text--line-through {
     text-decoration: line-through;
 }
 
