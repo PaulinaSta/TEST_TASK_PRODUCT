@@ -39,17 +39,25 @@
                 <div class="navigation__catalog catalog">
                     <a href="#" class="catalog__link white-text">Catalog <i class="fas fa-chevron-down catalog__icon"></i></a>
                 </div>
+
                 <div class="navigation__icons icons">
                     <a href="#" class="icons__link white-text">
                         <i class="fas fa-heart icons__icon icons__icon--favorites"></i>
+                        <div class="circle">
+                            <p class="circle__value white-text">3</p>
+                        </div>
                     </a>
                     <a href="#" class="icons__link white-text">
                         <i class="fas fa-shopping-cart icons__icon icons__icon--shopping-cart"></i>
+                        <div class="circle">
+                            <p class="circle__value white-text">3</p>
+                        </div>
                     </a>
                     <a href="#" class="icons__link white-text">
                         <i class="fas fa-user icons__icon icons__icon--log-in"></i>
                     </a>
                 </div>
+
             </div>
         </nav>
         <div class="header__aside">
@@ -76,9 +84,160 @@
         </div>
     </header>
 
+
+
     <section class="product">
+        <p class="products__title section-title">Products</p>
+        <div class="product__container">
+
+            <div class="product__chair chair">
+
+                <div class="chair__info">
+                    <div class="chair__opinion">
+                        <i class="fas fa-star chair__icon"></i>
+                        <p class="chair__stars-value">4.5</p>
+                        <p class="chair__reviews">10 <span class="opacity-40">Customer reviews</span>
+                        </p>
+                    </div>
+                    <p class="chair__code"><span class="opacity-40">Code</span> 555555</p>
+                </div>
+
+                <div class="chair__name-price">
+                    <h1 class="chair__name">Pear chair</h1>
+                    <div class="chair__prices">
+                        <p class="chair__price">599.00</p>
+                        <p class="chair__old-price">699.99</p>
+                    </div>
+                </div>
+
+                <div class="product__glide glide">
+                    <div class="product__track glide__track" data-glide-el="track">
+                        <ul class="product__slides glide__slides">
+
+                            <li class="product__slide glide__slide"><img src="../img/chair1.png" alt=""
+                                    class="product__img"></li>
+                            <li class="product__slide glide__slide"><img src="../img/chair2.png" alt=""
+                                    class="product__img"></li>
+                            <li class="product__slide glide__slide"><img src="../img/chair1.png" alt=""
+                                    class="product__img"></li>
+
+                        </ul>
+
+                        <div class="glide__arrows glide__arrows--product" data-glide-el="controls">
+                            <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><i
+                                    class="fas fa-chevron-left glide__icon"></i></button>
+                            <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><i
+                                    class="fas fa-chevron-right glide__icon"></i></button>
+                        </div>
+
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="product__image image product__image--1"><img src="../img/small-chair1.png" alt=""
+                    class="image__img">
+            </div>
+            <div class="product__image product__image--2"><img src="../img/small-chair2.png" alt="" class="image__img">
+            </div>
+            <div class="product__image product__image--3">
+                <img src="../img/small-chair1.png" alt="" class="image__img">
+            </div>
+
+
+
+
+
+
+
+
+
+
+            <div class="product__price price">
+                <div class="price__name-price">
+                    <p class="price__name">Pear chair</p>
+                    <p class="price__price">599.00</p>
+                </div>
+
+                <div class="price__favorite">
+                    <p class="price__date"><span class="opacity-40">Added:</span> 05.08.2021</p>
+                    <div class="price__heart">
+                        <i class="fas fa-heart price__icon"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product__specifications specifications">
+
+                <p class="specifications__title">Specifications:</p>
+                <p class="specifications__description">
+                    The pear chair is a kind of frameless furniture. This is a pear-shaped bag chair, which can be for
+                    children and adults. The product consists of two covers (internal and external), as well as a
+                    filler. Among professionals, it is called bin bag.
+                </p>
+                <p class="specifications__title">Colors:</p>
+                <div class="specifications__colors">
+                    <div class="specifications__color specifications__color--blue"></div>
+                    <div class="specifications__color specifications__color--green"></div>
+                    <div class="specifications__color specifications__color--cobalt"></div>
+                    <div class="specifications__color specifications__color--purple"></div>
+                </div>
+
+
+
+            </div>
+
+
+            <div class="product__payment payment">
+
+                <p class="payment__title">Product price</p>
+
+                <div class="payment__category">
+                    <p class="payment__subtitle">Payment method:</p>
+                    <div class="payment__methods">
+                        <div class="payment__method payment__method--1">
+                            <div class="payment__check"><i class="fas fa-check payment__icon"></i></div>
+                            <p class="payment__text">Cash</p>
+                        </div>
+                        <div class="payment__method">
+                            <div class="payment__check"></div>
+                            <p class="payment__text">Credit</p>
+                        </div>
+                        <div class="payment__method">
+                            <div class="payment__check"></div>
+                            <p class="payment__text">Certificate</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="payment__category">
+                    <p class="payment__subtitle">Delivery service:</p>
+                    <div class="payment__methods">
+                        <div class="payment__method payment__method--1">
+                            <div class="payment__check"><i class="fas fa-check payment__icon"></i></div>
+                            <p class="payment__text">Delivery</p>
+                        </div>
+                        <div class="payment__method payment__method--2">
+                            <div class="payment__check"></div>
+                            <p class="payment__text">Self-export</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="payment__buttons">
+                    <button class="payment__button payment__button--1 button white-text">Add to basket</button>
+                    <button class="payment__button button white-text">Make an order</button>
+                </div>
+
+            </div>
+        </div>
 
     </section>
+
+
 
     <section class="testimonials">
         <p class="testimonials__title section-title">Testimonials</p>
