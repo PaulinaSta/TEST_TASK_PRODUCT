@@ -6,10 +6,13 @@
 
 html {
     --bgc: #287194;
-    --opacity-white: #ffffff4d;
+    --opacity-white-30: #ffffff4d;
+    --opacity-white-85: #ffffffd9;
     --font-color: #5C5C5C;
     --opacity-font-color: #5c5c5c66;
     --opacity-icon-color: #5c5c5c99;
+    position: relative;
+
 }
 
 html,
@@ -18,7 +21,6 @@ button {
 }
 
 body {
-    min-height: 150vh;
     max-width: 1170px;
     margin: 0 auto;
     padding: 0 20px;
@@ -97,7 +99,7 @@ ul {
     display: flex;
     padding-left: 30px;
     height: 40px;
-    border-left: 1px solid var(--opacity-white);
+    border-left: 1px solid var(--opacity-white-30);
     flex: 1;
 }
 
@@ -114,7 +116,7 @@ ul {
 .catalog {
     padding-right: 30px;
     height: 40px;
-    border-right: 1px solid var(--opacity-white);
+    border-right: 1px solid var(--opacity-white-30);
 }
 
 .catalog__link {
@@ -206,4 +208,72 @@ ul {
 .delivery__icon {
     color: var(--bgc);
     margin-left: 10px;
+}
+
+.product {
+    background-color: #ddd;
+    margin-top: 100px;
+    height: 300px;
+}
+
+.testimonials {
+    background-color: #aaa;
+    margin-top: 100px;
+    height: 300px;
+}
+
+.accessories {
+    background-color: #777;
+    margin-top: 100px;
+    height: 300px;
+}
+
+.footer {
+    margin-top: 100px;
+    height: 381px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer__background {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 381px;
+    background: linear-gradient(180deg, #287194 0%, #0F435B 100%);
+    z-index: -1;
+}
+
+.contacts__title {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.contacts__item {
+    margin-bottom: 30px;
+}
+
+.contacts__icon {
+    color: #fff;
+    width: 20px;
+    margin-right: 10px;
+}
+
+.contacts__icon--social-media {
+    margin-right: 30px;
+    font-size: 20px;
+}
+
+.contacts__link {
+    color: var(--opacity-white-85);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.contacts__social-media {
+    display: flex;
 }
