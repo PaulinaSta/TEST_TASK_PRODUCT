@@ -12,9 +12,11 @@ html {
     --purple-color: #883271;
     --opacity-white-30: #ffffff4d;
     --opacity-white-85: #ffffffd9;
+    --opacity-black-30: #0000004d;
     --font-color: #5C5C5C;
     --opacity-font-color-30: #5c5c5c4d;
     --opacity-font-color-40: #5c5c5c66;
+    --opacity-font-color-50: #5c5c5c80;
     --opacity-font-color-70: #5c5c5cb3;
     --opacity-icon-color: #5c5c5c99;
     position: relative;
@@ -44,14 +46,11 @@ ul {
 
 .button {
     all: unset;
-    height: 40px;
-    padding: 0 50px;
     text-transform: uppercase;
     font-weight: 500;
     font-size: 16px;
     background-color: var(--bgc);
     cursor: pointer;
-    margin-left: 70px;
     text-align: center;
 }
 
@@ -279,8 +278,10 @@ ul {
 }
 
 .product__container {
+
     display: grid;
-    grid-template-columns: 16.66% 16.66% 16.66% 50%;
+    /* grid-template-columns: 16.66% 16.66% 16.66% 50%; */
+    grid-template-columns: 170px 170px 170px auto;
     /* grid-template-rows: 70px 252px 92px 130px; */
     grid-template-areas: "chair chair chair price""chair chair chair specifications""chair chair chair payment""image1 image2 image3 payment";
     grid-gap: 30px;
@@ -507,14 +508,6 @@ ul {
     background-color: var(--purple-color);
 }
 
-
-
-
-
-
-
-
-
 .product__payment {
     grid-area: payment;
     box-shadow: 0px 2px 7px 2px rgba(19, 53, 60, 0.15);
@@ -543,7 +536,6 @@ ul {
 .payment__subtitle {
     font-weight: 400;
     font-size: 16px;
-    margin-right: 30px;
 }
 
 .payment__methods {
@@ -598,7 +590,10 @@ ul {
 .payment__button {
     flex: 1;
     margin-left: 0;
+    height: 40px;
 }
+
+
 
 .payment__button--1 {
     margin-right: 20px;
@@ -606,20 +601,6 @@ ul {
     border: 2px solid var(--bgc);
     color: var(--bgc);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* Section testimonials */
 
@@ -699,6 +680,13 @@ ul {
     justify-content: space-between;
 }
 
+.testimonials__button {
+    height: 40px;
+    margin-left: 70px;
+    padding: 0 50px;
+}
+
+
 /* Section accessories */
 
 .accessories {
@@ -763,10 +751,6 @@ ul {
 .glide__icon {
     font-size: 20px;
 }
-
-
-
-
 
 .accessories-slide {
     position: relative;
@@ -874,4 +858,179 @@ ul {
 
 .contacts__social-media {
     display: flex;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Subpage delivery */
+
+.delivery {
+    margin-top: 100px;
+}
+
+.delivery__container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-areas: "name number details""mail city details""street apartment details""confirm edit details";
+    grid-gap: 30px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid var(--opacity-black-30);
+    margin-bottom: 35px;
+}
+
+.delivery__input {
+    font: 16px system-ui;
+    margin-right: 0;
+    padding: 20px 25px;
+    height: auto;
+
+}
+
+.delivery__input::placeholder {
+    color: var(--opacity-font-color-50);
+}
+
+.delivery__input--name {
+    grid-area: name;
+    box-shadow: 0px 2px 7px 2px rgba(19, 53, 60, 0.15);
+}
+
+.delivery__input--number {
+    grid-area: number;
+    box-shadow: 0px 2px 7px 2px rgba(19, 53, 60, 0.15);
+}
+
+.delivery__input--mail {
+    grid-area: mail;
+    box-shadow: 0px 2px 7px 2px rgba(19, 53, 60, 0.15);
+}
+
+.delivery__input--city {
+    grid-area: city;
+    box-shadow: 0px 2px 7px 2px rgba(19, 53, 60, 0.15);
+}
+
+.delivery__input--street {
+    grid-area: street;
+    box-shadow: 0px 2px 7px 2px rgba(19, 53, 60, 0.15);
+}
+
+.delivery__input--apartment {
+    grid-area: apartment;
+    box-shadow: 0px 2px 7px 2px rgba(19, 53, 60, 0.15);
+}
+
+
+
+
+
+
+.delivery__details {
+    grid-area: details;
+    box-shadow: 0px 2px 7px 2px rgba(19, 53, 60, 0.15);
+}
+
+.details {
+    padding: 30px;
+}
+
+.details__title {
+    font-size: 18px;
+    font-weight: 500;
+    color: #000;
+    margin-bottom: 30px;
+}
+
+.details__categories {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.details__category {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.details__subtitle {
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.details__text {
+    font-weight: 400;
+    font-size: 16px;
+    color: #000;
+    margin-bottom: 20px;
+
+}
+
+.details__button {
+    background-color: #fff;
+    border: 2px solid var(--bgc);
+    color: var(--bgc);
+    height: 40px;
+    width: 100%;
+}
+
+.delivery__button {
+    padding: 20px 0;
+}
+
+.delivery__button--confirm {
+    grid-area: confirm;
+}
+
+.delivery__button--edit {
+    grid-area: edit;
+    background-color: #fff;
+    border: 2px solid var(--bgc);
+    color: var(--bgc);
+}
+
+.agreement {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.agreement__check {
+    height: 19px;
+    width: 19px;
+    border: 1px solid var(--font-color);
+    margin-right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.agreement__icon {
+    color: var(--green-color);
+    font-size: 12px;
+}
+
+.agreement__text {
+    font-size: 16px;
+    font-weight: 400;
 }
