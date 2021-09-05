@@ -44,6 +44,10 @@ ul {
     list-style: none;
 }
 
+.section {
+    margin-top: 100px;
+}
+
 .button {
     all: unset;
     text-transform: uppercase;
@@ -63,7 +67,7 @@ ul {
     font-weight: 400;
 }
 
-.section-title {
+.section__title {
     color: #000;
     font-weight: 500;
     font-size: 24px;
@@ -270,12 +274,6 @@ ul {
 }
 
 /* Section product */
-
-.product {
-    margin-top: 100px;
-
-    /* background-color: #ddd; */
-}
 
 .product__container {
 
@@ -604,10 +602,6 @@ ul {
 
 /* Section testimonials */
 
-.testimonials {
-    margin-top: 100px;
-}
-
 .testimonials__glide-container {
     position: relative;
     padding: 0 70px;
@@ -690,7 +684,6 @@ ul {
 /* Section accessories */
 
 .accessories {
-    margin-top: 100px;
     position: relative;
 }
 
@@ -883,10 +876,6 @@ ul {
 
 /* Subpage delivery */
 
-.delivery {
-    margin-top: 100px;
-}
-
 .delivery__container {
     display: grid;
     grid-template-columns: auto auto auto;
@@ -1033,4 +1022,14 @@ ul {
 .agreement__text {
     font-size: 16px;
     font-weight: 400;
+}
+
+
+
+/* Subpage order */
+
+.order__container {
+    padding-bottom: 0;
+    border-bottom: none;
+    margin-bottom: 0;
 }

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Delivery</title>
+    <title>Order</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
@@ -69,7 +69,7 @@
                     <a href="#" class="direction__link white-text">Basket <i class="fas fa-caret-right direction__icon"></i></a>
                 </li>
                 <li class="direction__item">
-                    <a href="#" class="direction__link direction__link--active white-text">Delivery </a>
+                    <a href="#" class="direction__link direction__link--active white-text">Order </a>
                 </li>
             </ul>
 
@@ -92,61 +92,51 @@
 
 
 
-    <section class="delivery section">
-        <p class="delivery__title section__title">Delivery registration</p>
+    <section class="order section">
+        <p class="delivery__title section__title">Order</p>
 
 
-        <div class="delivery__container">
+        <div class="delivery__container order__container">
 
 
             <input type="text" placeholder="Your full name" class="form__input delivery__input delivery__input--name">
             <input type="text" placeholder="Your phone number"
                 class=" form__input delivery__input delivery__input--number">
             <input type="text" placeholder="Your E-mail" class=" form__input delivery__input delivery__input--mail">
-            <input type="text" placeholder="Enter city" class=" form__input delivery__input delivery__input--city">
-            <input type="text" placeholder="Enter street and house #"
-                class="form__input delivery__input delivery__input--street">
-            <input type="text" placeholder="Enter the apartment #"
+            <input type="text" placeholder="Card number" class=" form__input delivery__input delivery__input--city">
+            <input type="text" placeholder="CVV" class="form__input delivery__input delivery__input--street">
+            <input type="text" placeholder="Term of action"
                 class=" form__input delivery__input delivery__input--apartment">
 
 
 
             <div class="delivery__details details">
 
-                <p class="details__title">Delivery details</p>
+                <p class="details__title">Order details</p>
                 <div class="details__categories">
                     <div class="details__category">
-                        <p class="details__subtitle">Name:</p>
-                        <p class="details__subtitle">City:</p>
-                        <p class="details__subtitle">Street:</p>
-                        <p class="details__subtitle">Apartment:</p>
+                        <p class="details__subtitle">Total amount:</p>
+                        <p class="details__subtitle">Quantity of goods:</p>
+                        <p class="details__subtitle">Form of payment:</p>
+                        <p class="details__subtitle">Delivery service:</p>
 
                     </div>
                     <div class="details__category">
-                        <p class="details__text">Adam Sch..</p>
-                        <p class="details__text">Wroclaw</p>
-                        <p class="details__text">Central 47E</p>
-                        <p class="details__text">170</p>
+                        <p class="details__text">4792.00</p>
+                        <p class="details__text">07</p>
+                        <p class="details__text">Cash</p>
+                        <p class="details__text">Delivery</p>
                     </div>
                 </div>
 
-                <button class="details__button button">Print delivery</button>
+                <button class="details__button button">Print order</button>
             </div>
 
 
             <button type="submit" class="delivery__button delivery__button--confirm button white-text">Confirm
-                delivery</button>
-            <button type="edit" class="delivery__button delivery__button--edit button">Edit delivery</button>
+                the order</button>
+            <button type="edit" class="delivery__button delivery__button--edit button">Correct order</button>
 
-        </div>
-
-
-
-
-
-        <div class="delivery__agreement agreement">
-            <div class="agreement__check"><i class="fas fa-check agreement__icon"></i></div>
-            <p class="agreement__text">Call me back after confirming delivery</p>
         </div>
 
     </section>
