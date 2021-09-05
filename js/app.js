@@ -14,39 +14,49 @@ new Glide('.testimonials__glide', {
 
 
 
-$(".add-to-cart").click(function (event) {
-    event.preventDefault();
-    var name = $(this).attr("data-name");
-    var price = Number($(this).attr("data-price"));
-
-    shoppingCart.addItemToCart(name, price, 1);
-    displayCart();
-});
-
-$(".clear-cart").click(function (event) {
-    shoppingCart.clearCart();
-    displayCart();
-});
+// const showCircle = () => {
+//     $('.add-item-index').on('click', function () {
+//         $('.icons__circle').addClass('icons__circle--show');
+//     });
+// };
 
 
-function displayCart() {
-    var cartArray = shoppingCart.listCart();
-    console.log(cartArray);
-    var output = "";
+// const app = () => {
+//     showCircle();
+// };
 
-    $("#count-cart-basket-nav").html(shoppingCart.countCart());
-    $("#count-cart-basket-cart").html(shoppingCart.countCart());
-    $("#count-cart-basket-summary").html(shoppingCart.countCart());
+const toggleHeart = () => {
+    $('.price__icon').on('click', function () {
+        $('.price__icon').toggleClass('price__icon--show');
+    });
+};
 
-    $("#total-cart-basket-cart").html(shoppingCart.totalCart());
-    $("#total-cart-basket-confirm").html(shoppingCart.totalCart());
-    $("#total-cart-basket-order").html(shoppingCart.totalCart());
-}
 
-$(".basket__buttons").on("click", ".remove-from-cart", function (event) {
-    var name = $(this).attr("data-name");
-    shoppingCart.removeItemFromCart(name);
-    displayCart();
-});
+const checkColor = () => {
+    $('.specifications__color').on('click', function () {
+        $('.specifications__color').not(this).removeClass('specifications__color--active');
+        $(this).addClass('specifications__color--active');
+    });
+};
 
-displayCart();
+
+const checkPayment = () => {
+    $('.payment__check1').on('click', function () {
+        $('.payment__check1').not(this).removeClass('payment__check1--show');
+        $(this).addClass('payment__check1--show');
+    });
+
+    $('.payment__check2').on('click', function () {
+        $('.payment__check2').not(this).removeClass('payment__check2--show');
+        $(this).addClass('payment__check2--show');
+    });
+};
+
+
+const app = () => {
+    toggleHeart();
+    checkColor();
+    checkPayment();
+};
+
+app();

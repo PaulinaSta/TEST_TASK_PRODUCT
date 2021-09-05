@@ -19,8 +19,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/css/glide.theme.min.css"
         integrity="sha512-wCwx+DYp8LDIaTem/rpXubV/C1WiNRsEVqoztV0NZm8tiTvsUeSlA/Uz02VTGSiqfzAHD4RnqVoevMcRZgYEcQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/glide-accessories.css">
+    <link rel="stylesheet" href="../dist/css/lightbox.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
@@ -32,29 +33,29 @@
                     <h1 class="logo__text"><a href="./index.html" class="logo__link white-text">Logo</a></h1>
                 </div>
                 <ul class="navigation__menu menu">
-                    <li class="menu__item"><a href="#" class="menu__link white-text">Categories</a></li>
-                    <li class="menu__item"><a href="#" class="menu__link white-text">Payment</a></li>
-                    <li class="menu__item"><a href="#" class="menu__link white-text">Warranty</a></li>
-                    <li class="menu__item"><a href="#" class="menu__link white-text">Credit</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link link-transition white-text">Categories</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link link-transition white-text">Payment</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link link-transition white-text">Warranty</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link link-transition white-text">Credit</a></li>
                 </ul>
                 <div class="navigation__catalog catalog">
-                    <a href="#" class="catalog__link white-text">Catalog <i class="fas fa-chevron-down catalog__icon"></i></a>
+                    <a href="#" class="catalog__link link-transition white-text">Catalog <i class="fas fa-chevron-down catalog__icon"></i></a>
                 </div>
 
                 <div class="navigation__icons icons">
-                    <a href="#" class="icons__link white-text">
+                    <a href="#" class="icons__link link-transition white-text">
                         <i class="fas fa-heart icons__icon icons__icon--favorites"></i>
-                        <!-- <div class="circle">
-                            <p class="circle__value white-text">3</p>
+                        <!-- <div class="icons__circle">
+                            <p class="icons__circle-value white-text">3</p>
                         </div> -->
                     </a>
-                    <a href="./basket.html" class="icons__link white-text">
+                    <a href="./basket.html" class="icons__link link-transition white-text">
                         <i class="fas fa-shopping-cart icons__icon icons__icon--shopping-cart"></i>
-                        <div class="circle">
-                            <p class="circle__value white-text"><span id="count-cart-index-nav">X</span></p>
+                        <div class="icons__circle">
+                            <p class="icons__circle-value white-text"><span id="count-cart-index-nav">X</span></p>
                         </div>
                     </a>
-                    <a href="#" class="icons__link white-text">
+                    <a href="#" class="icons__link link-transition white-text">
                         <i class="fas fa-user icons__icon icons__icon--log-in"></i>
                     </a>
                 </div>
@@ -137,22 +138,18 @@
 
             </div>
 
-            <div class="product__image image product__image--1"><img src="../img/small-chair1.png" alt=""
-                    class="image__img">
+            <div class="product__image image product__image--1">
+                <a href="../img/chair1.png" data-lightbox="roadtrip" class="image__link"><img src="../img/small-chair1.png" alt=""
+                    class="image__img"></a>
             </div>
-            <div class="product__image product__image--2"><img src="../img/small-chair2.png" alt="" class="image__img">
+            <div class="product__image image product__image--2">
+                <a href="../img/chair2.png" data-lightbox="roadtrip" class="image__link"><img src="../img/small-chair2.png" alt=""
+                    class="image__img"></a>
             </div>
-            <div class="product__image product__image--3">
-                <img src="../img/small-chair1.png" alt="" class="image__img">
+            <div class="product__image image product__image--3">
+                <a href="../img/chair1.png" data-lightbox="roadtrip" class="image__link"><img src="../img/small-chair1.png" alt=""
+                    class="image__img"></a>
             </div>
-
-
-
-
-
-
-
-
 
 
             <div class="product__price price">
@@ -165,6 +162,7 @@
                     <p class="price__date"><span class="opacity-40">Added:</span> 05.08.2021</p>
                     <div class="price__heart">
                         <i class="fas fa-heart price__icon"></i>
+                        <i class="far fa-heart price__icon price__icon--show"></i>
                     </div>
                 </div>
             </div>
@@ -181,7 +179,8 @@
                 <div class="specifications__colors">
                     <div class="specifications__color specifications__color--blue"></div>
                     <div class="specifications__color specifications__color--green"></div>
-                    <div class="specifications__color specifications__color--cobalt"></div>
+                    <div class="specifications__color specifications__color--cobalt">
+                    </div>
                     <div class="specifications__color specifications__color--purple"></div>
                 </div>
 
@@ -198,15 +197,18 @@
                     <p class="payment__subtitle">Payment method:</p>
                     <div class="payment__methods">
                         <div class="payment__method payment__method--1">
-                            <div class="payment__check"><i class="fas fa-check payment__icon"></i></div>
+                            <div class="payment__check payment__check1"><i class="fas fa-check payment__icon"></i>
+                            </div>
                             <p class="payment__text">Cash</p>
                         </div>
                         <div class="payment__method">
-                            <div class="payment__check"></div>
+                            <div class="payment__check payment__check1"><i class="fas fa-check payment__icon"></i>
+                            </div>
                             <p class="payment__text">Credit</p>
                         </div>
                         <div class="payment__method">
-                            <div class="payment__check"></div>
+                            <div class="payment__check payment__check1"><i class="fas fa-check payment__icon"></i>
+                            </div>
                             <p class="payment__text">Certificate</p>
                         </div>
                     </div>
@@ -217,11 +219,13 @@
                     <p class="payment__subtitle">Delivery service:</p>
                     <div class="payment__methods">
                         <div class="payment__method payment__method--1">
-                            <div class="payment__check"><i class="fas fa-check payment__icon"></i></div>
+                            <div class="payment__check payment__check2"><i class="fas fa-check payment__icon"></i>
+                            </div>
                             <p class="payment__text">Delivery</p>
                         </div>
                         <div class="payment__method payment__method--2">
-                            <div class="payment__check"></div>
+                            <div class="payment__check payment__check2"><i class="fas fa-check payment__icon"></i>
+                            </div>
                             <p class="payment__text">Self-export</p>
                         </div>
                     </div>
@@ -230,7 +234,10 @@
 
                 <div class="payment__buttons">
 
-                    <button class="payment__button payment__button--1 button white-text"><a href="./basket.html" class="payment__link payment__link--1 add-item-index" data-name="Chair"
+                    <!-- <button class="payment__button payment__button--1 button button--white white-text"><a href="./basket.html" class="payment__link payment__link--1 link-transition add-item-index" data-name="Chair"
+                        data-price="599.00">Add to basket</a></button> -->
+
+                    <button class="payment__button payment__button--1 button button--white white-text"><a href="./basket.html" class="payment__link payment__link--1 link-transition add-item-index" data-name="Chair"
                         data-price="599.00">Add to basket</a></button>
 
 
@@ -446,20 +453,20 @@
             <p class="contacts__title white-text">Contacts</p>
             <ul class="contacts__items">
                 <li class="contacts__item">
-                    <a href="tel:1(123)4443322" class="contacts__link"><i class="fas fa-phone-alt contacts__icon"></i> 1 (123) 444 33 22 </a>
+                    <a href="tel:1(123)4443322" class="contacts__link link-transition"><i class="fas fa-phone-alt contacts__icon"></i> 1 (123) 444 33 22 </a>
                 </li>
                 <li class="contacts__item">
-                    <a href="mailto:collection@info.com" class="contacts__link"><i class="fas fa-envelope contacts__icon"></i> collection@info.com</a>
+                    <a href="mailto:collection@info.com" class="contacts__link link-transition"><i class="fas fa-envelope contacts__icon"></i> collection@info.com</a>
                 </li>
                 <li class="contacts__item">
-                    <a href="#" class="contacts__link"><i class="fas fa-map-marker-alt contacts__icon"></i> ua. nicolaev st.lenina 123</a>
+                    <a href="#" class="contacts__link link-transition"><i class="fas fa-map-marker-alt contacts__icon"></i> ua. nicolaev st.lenina 123</a>
                 </li>
                 <li class="contacts__item">
                     <div class="contacts__social-media">
-                        <a href="#" class="contacts__link"><i class="fab fa-facebook-f contacts__icon--social-media"></i></a>
-                        <a href="#" class="contacts__link"><i class="fab fa-instagram contacts__icon--social-media"></i></a>
-                        <a href="#" class="contacts__link"><i class="fab fa-twitter contacts__icon--social-media"></i></a>
-                        <a href="#" class="contacts__link"><i class="fab fa-google-plus-g contacts__icon--social-media"></i></a>
+                        <a href="#" class="contacts__link link-transition"><i class="fab fa-facebook-f contacts__icon--social-media"></i></a>
+                        <a href="#" class="contacts__link link-transition"><i class="fab fa-instagram contacts__icon--social-media"></i></a>
+                        <a href="#" class="contacts__link link-transition"><i class="fab fa-twitter contacts__icon--social-media"></i></a>
+                        <a href="#" class="contacts__link link-transition"><i class="fab fa-google-plus-g contacts__icon--social-media"></i></a>
                     </div>
                 </li>
             </ul>
@@ -467,28 +474,28 @@
         <div class="footer__information">
             <p class="contacts__title white-text">Information</p>
             <ul class="contacts__items">
-                <li class="contacts__item"><a href="#" class="contacts__link">About Us</a></li>
-                <li class="contacts__item"><a href="#" class="contacts__link">Our history</a></li>
-                <li class="contacts__item"><a href="#" class="contacts__link">Contacts</a></li>
-                <li class="contacts__item"><a href="#" class="contacts__link">Delivery info</a></li>
+                <li class="contacts__item"><a href="#" class="contacts__link link-transition">About Us</a></li>
+                <li class="contacts__item"><a href="#" class="contacts__link link-transition">Our history</a></li>
+                <li class="contacts__item"><a href="#" class="contacts__link link-transition">Contacts</a></li>
+                <li class="contacts__item"><a href="#" class="contacts__link link-transition">Delivery info</a></li>
             </ul>
         </div>
         <div class="footer__shop">
             <p class="contacts__title white-text">Shop</p>
             <ul class="contacts__items">
-                <li class="contacts__item"><a href="#" class="contacts__link">Oxford</a></li>
-                <li class="contacts__item"><a href="#" class="contacts__link">On laces</a></li>
-                <li class="contacts__item"><a href="#" class="contacts__link">Without laces</a></li>
-                <li class="contacts__item"><a href="#" class="contacts__link">Stock</a></li>
+                <li class="contacts__item"><a href="#" class="contacts__link link-transition">Oxford</a></li>
+                <li class="contacts__item"><a href="#" class="contacts__link link-transition">On laces</a></li>
+                <li class="contacts__item"><a href="#" class="contacts__link link-transition">Without laces</a></li>
+                <li class="contacts__item"><a href="#" class="contacts__link link-transition">Stock</a></li>
             </ul>
         </div>
         <div class="footer__account">
             <p class="contacts__title white-text">Account</p>
             <ul class="contacts__items">
-                <li class="contacts__item"><a href="#" class="contacts__link">My account</a></li>
-                <li class="contacts__item"><a href="#" class="contacts__link">Wish list</a></li>
-                <li class="contacts__item"><a href="#" class="contacts__link">Newsletter</a></li>
-                <li class="contacts__item"><a href="#" class="contacts__link">My order</a></li>
+                <li class="contacts__item"><a href="#" class="contacts__link link-transition">My account</a></li>
+                <li class="contacts__item"><a href="#" class="contacts__link link-transition">Wish list</a></li>
+                <li class="contacts__item"><a href="#" class="contacts__link link-transition">Newsletter</a></li>
+                <li class="contacts__item"><a href="#" class="contacts__link link-transition">My order</a></li>
             </ul>
         </div>
     </footer>
@@ -504,7 +511,7 @@
 
 
     <script src="../js/shoppingCart.js"></script>
-
+    <script src="../dist/js/lightbox.js"></script>
     <script src="../js/app.js"></script>
 
     <script src="../js/app-accessories.js"></script>

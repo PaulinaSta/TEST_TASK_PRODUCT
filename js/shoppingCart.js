@@ -128,23 +128,6 @@ var shoppingCart = (function () {
 
 
 
-
-
-// $(".add-to-cart").click(function (event) {
-//     event.preventDefault();
-//     var name = $(this).attr("data-name");
-//     var price = Number($(this).attr("data-price"));
-
-//     shoppingCart.addItemToCart(name, price, 1);
-//     displayCart();
-// });
-
-// $(".clear-cart").click(function (event) {
-//     shoppingCart.clearCart();
-//     displayCart();
-// });
-
-
 function displayCart() {
     var cartArray = shoppingCart.listCart();
     console.log(cartArray);
