@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product</title>
+    <title>Basket</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/css/glide.theme.min.css"
         integrity="sha512-wCwx+DYp8LDIaTem/rpXubV/C1WiNRsEVqoztV0NZm8tiTvsUeSlA/Uz02VTGSiqfzAHD4RnqVoevMcRZgYEcQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style-basket.css">
 </head>
 
 <body>
@@ -69,7 +69,7 @@
                     <a href="#" class="direction__link white-text">Categories <i class="fas fa-caret-right direction__icon"></i></a>
                 </li>
                 <li class="direction__item">
-                    <a href="#" class="direction__link direction__link--active white-text">Product card</a>
+                    <a href="#" class="direction__link direction__link--active white-text">Basket card</a>
                 </li>
             </ul>
 
@@ -86,64 +86,6 @@
 
 
 
-    <section class="product section">
-        <p class="products__title section__title">Products</p>
-        <div class="product__container">
-
-            <div class="product__chair chair">
-
-                <div class="chair__info">
-                    <div class="chair__opinion">
-                        <i class="fas fa-star chair__icon"></i>
-                        <p class="chair__stars-value">4.5</p>
-                        <p class="chair__reviews">10 <span class="opacity-40">Customer reviews</span>
-                        </p>
-                    </div>
-                    <p class="chair__code"><span class="opacity-40">Code</span> 555555</p>
-                </div>
-
-                <div class="chair__name-price">
-                    <h1 class="chair__name">Pear chair</h1>
-                    <div class="chair__prices">
-                        <p class="chair__price">599.00</p>
-                        <p class="chair__old-price">699.99</p>
-                    </div>
-                </div>
-
-                <div class="product__glide glide">
-                    <div class="product__track glide__track" data-glide-el="track">
-                        <ul class="product__slides glide__slides">
-
-                            <li class="product__slide glide__slide"><img src="../img/chair1.png" alt=""
-                                    class="product__img"></li>
-                            <li class="product__slide glide__slide"><img src="../img/chair2.png" alt=""
-                                    class="product__img"></li>
-                            <li class="product__slide glide__slide"><img src="../img/chair1.png" alt=""
-                                    class="product__img"></li>
-
-                        </ul>
-
-                        <div class="glide__arrows glide__arrows--product" data-glide-el="controls">
-                            <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><i
-                                    class="fas fa-chevron-left glide__icon"></i></button>
-                            <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><i
-                                    class="fas fa-chevron-right glide__icon"></i></button>
-                        </div>
-
-
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="product__image image product__image--1"><img src="../img/small-chair1.png" alt=""
-                    class="image__img">
-            </div>
-            <div class="product__image product__image--2"><img src="../img/small-chair2.png" alt="" class="image__img">
-            </div>
-            <div class="product__image product__image--3">
-                <img src="../img/small-chair1.png" alt="" class="image__img">
-            </div>
 
 
 
@@ -154,167 +96,224 @@
 
 
 
-            <div class="product__price price">
-                <div class="price__name-price">
-                    <p class="price__name">Pear chair</p>
-                    <p class="price__price">599.00</p>
-                </div>
-
-                <div class="price__favorite">
-                    <p class="price__date"><span class="opacity-40">Added:</span> 05.08.2021</p>
-                    <div class="price__heart">
-                        <i class="fas fa-heart price__icon"></i>
-                    </div>
-                </div>
-            </div>
-
-            <div class="product__specifications specifications">
-
-                <p class="specifications__title">Specifications:</p>
-                <p class="specifications__description">
-                    The pear chair is a kind of frameless furniture. This is a pear-shaped bag chair, which can be for
-                    children and adults. The product consists of two covers (internal and external), as well as a
-                    filler. Among professionals, it is called bin bag.
-                </p>
-                <p class="specifications__title">Colors:</p>
-                <div class="specifications__colors">
-                    <div class="specifications__color specifications__color--blue"></div>
-                    <div class="specifications__color specifications__color--green"></div>
-                    <div class="specifications__color specifications__color--cobalt"></div>
-                    <div class="specifications__color specifications__color--purple"></div>
-                </div>
+    <section class="basket section">
+        <p class="basket__title section__title">Basket</p>
+        <div class="basket__container">
+            <div class="basket__items">
 
 
+                <div class="basket__item">
+                    <img src="../img/smallest-chair1.png" alt="" class="basket__img">
 
-            </div>
-
-
-            <div class="product__payment payment">
-
-                <p class="payment__title">Product price</p>
-
-                <div class="payment__category">
-                    <p class="payment__subtitle">Payment method:</p>
-                    <div class="payment__methods">
-                        <div class="payment__method payment__method--1">
-                            <div class="payment__check"><i class="fas fa-check payment__icon"></i></div>
-                            <p class="payment__text">Cash</p>
-                        </div>
-                        <div class="payment__method">
-                            <div class="payment__check"></div>
-                            <p class="payment__text">Credit</p>
-                        </div>
-                        <div class="payment__method">
-                            <div class="payment__check"></div>
-                            <p class="payment__text">Certificate</p>
-                        </div>
+                    <div class="basket__name-price">
+                        <p class="basket__name">Pear chair</p>
+                        <p class="basket__price">599.00</p>
                     </div>
 
-                </div>
-
-                <div class="payment__category">
-                    <p class="payment__subtitle">Delivery service:</p>
-                    <div class="payment__methods">
-                        <div class="payment__method payment__method--1">
-                            <div class="payment__check"><i class="fas fa-check payment__icon"></i></div>
-                            <p class="payment__text">Delivery</p>
-                        </div>
-                        <div class="payment__method payment__method--2">
-                            <div class="payment__check"></div>
-                            <p class="payment__text">Self-export</p>
-                        </div>
+                    <div class="basket__added">
+                        <p class="basket__text">Added:</p>
+                        <p class="basket__date">05.08.2021</p>
                     </div>
 
-                </div>
+                    <div class="basket__buttons">
+                        <button class="basket__button button white-text"><i
+                                class="fas fa-minus basket__icon"></i></button>
 
-                <div class="payment__buttons">
-                    <button class="payment__button payment__button--1 button white-text">Add to basket</button>
-                    <button class="payment__button button white-text">Make an order</button>
+                        <p class="basket__value">01</p>
+                        <button class="basket__button button white-text"><i
+                                class="fas fa-plus basket__icon"></i></button>
+                    </div>
+
+                    <div class="basket__name-price">
+                        <p class="basket__name">Total amount</p>
+                        <p class="basket__price">599.00</p>
+                    </div>
+
+
+                    <div class="basket__button-container">
+                        <button class="basket__button basket__button--delete button white-text"><i
+                                class="fas fa-times"></i></button>
+                    </div>
+                </div>
+                <div class="basket__item">
+                    <img src="../img/smallest-chair1.png" alt="" class="basket__img">
+
+                    <div class="basket__name-price">
+                        <p class="basket__name">Pear chair</p>
+                        <p class="basket__price">599.00</p>
+                    </div>
+
+                    <div class="basket__added">
+                        <p class="basket__text">Added:</p>
+                        <p class="basket__date">05.08.2021</p>
+                    </div>
+
+                    <div class="basket__buttons">
+                        <button class="basket__button button white-text"><i
+                                class="fas fa-minus basket__icon"></i></button>
+
+                        <p class="basket__value">01</p>
+                        <button class="basket__button button white-text"><i
+                                class="fas fa-plus basket__icon"></i></button>
+                    </div>
+
+                    <div class="basket__name-price">
+                        <p class="basket__name">Total amount</p>
+                        <p class="basket__price">599.00</p>
+                    </div>
+
+
+                    <div class="basket__button-container">
+                        <button class="basket__button basket__button--delete button white-text"><i
+                                class="fas fa-times"></i></button>
+                    </div>
+                </div>
+                <div class="basket__item">
+                    <img src="../img/smallest-chair1.png" alt="" class="basket__img">
+
+                    <div class="basket__name-price">
+                        <p class="basket__name">Pear chair</p>
+                        <p class="basket__price">599.00</p>
+                    </div>
+
+                    <div class="basket__added">
+                        <p class="basket__text">Added:</p>
+                        <p class="basket__date">05.08.2021</p>
+                    </div>
+
+                    <div class="basket__buttons">
+                        <button class="basket__button button white-text"><i
+                                class="fas fa-minus basket__icon"></i></button>
+
+                        <p class="basket__value">01</p>
+                        <button class="basket__button button white-text"><i
+                                class="fas fa-plus basket__icon"></i></button>
+                    </div>
+
+                    <div class="basket__name-price">
+                        <p class="basket__name">Total amount</p>
+                        <p class="basket__price">599.00</p>
+                    </div>
+
+
+                    <div class="basket__button-container">
+                        <button class="basket__button basket__button--delete button white-text"><i
+                                class="fas fa-times"></i></button>
+                    </div>
+                </div>
+                <div class="basket__item">
+                    <img src="../img/smallest-chair1.png" alt="" class="basket__img">
+
+                    <div class="basket__name-price">
+                        <p class="basket__name">Pear chair</p>
+                        <p class="basket__price">599.00</p>
+                    </div>
+
+                    <div class="basket__added">
+                        <p class="basket__text">Added:</p>
+                        <p class="basket__date">05.08.2021</p>
+                    </div>
+
+                    <div class="basket__buttons">
+                        <button class="basket__button button white-text"><i
+                                class="fas fa-minus basket__icon"></i></button>
+
+                        <p class="basket__value">01</p>
+                        <button class="basket__button button white-text"><i
+                                class="fas fa-plus basket__icon"></i></button>
+                    </div>
+
+                    <div class="basket__name-price">
+                        <p class="basket__name">Total amount</p>
+                        <p class="basket__price">599.00</p>
+                    </div>
+
+
+                    <div class="basket__button-container">
+                        <button class="basket__button basket__button--delete button white-text"><i
+                                class="fas fa-times"></i></button>
+                    </div>
+                </div>
+                <div class="basket__item basket__item--last">
+                    <img src="../img/smallest-chair1.png" alt="" class="basket__img">
+
+                    <div class="basket__name-price">
+                        <p class="basket__name">Pear chair</p>
+                        <p class="basket__price">599.00</p>
+                    </div>
+
+                    <div class="basket__added">
+                        <p class="basket__text">Added:</p>
+                        <p class="basket__date">05.08.2021</p>
+                    </div>
+
+                    <div class="basket__buttons">
+                        <button class="basket__button button white-text"><i
+                                class="fas fa-minus basket__icon"></i></button>
+
+                        <p class="basket__value">01</p>
+                        <button class="basket__button button white-text"><i
+                                class="fas fa-plus basket__icon"></i></button>
+                    </div>
+
+                    <div class="basket__name-price">
+                        <p class="basket__name">Total amount</p>
+                        <p class="basket__price">599.00</p>
+                    </div>
+
+
+                    <div class="basket__button-container">
+                        <button class="basket__button basket__button--delete button white-text"><i
+                                class="fas fa-times"></i></button>
+                    </div>
                 </div>
 
             </div>
+            <div class="basket__summary summary">
+
+
+                <p class="summary__title">Your order</p>
+
+                <div class="summary__categories">
+                    <div class="summary__category">
+                        <p class="summary__subtitle">Total amount:</p>
+                        <p class="summary__subtitle">Quantity of goods:</p>
+                        <p class="summary__subtitle">Form of payment:</p>
+
+                    </div>
+                    <div class="summary__category">
+                        <p class="summary__text">4792.00</p>
+                        <p class="summary__text">08</p>
+                        <p class="summary__text">Cash</p>
+                    </div>
+                </div>
+
+                <p class="summary__subtitle">Delivery registration</p>
+
+                <button class="summary__button summary__button--form button">Fill in the form</button>
+
+                <div class="summary__total total">
+                    <p class="total__text">Amount to be paid
+                    </p>
+                    <p class="total__value">4792.00</p>
+                </div>
+
+                <button class="summary__button summary__button--order button white-text">Make an order</button>
+
+
+                <div class="summary__agreement agreement">
+                    <div class="agreement__check"><i class="fas fa-check agreement__icon"></i></div>
+                    <p class="agreement__text">I agree to the <a href="#" class="agreement__link">Privacy Policy</a></p>
+                </div>
+
+            </div>
+
         </div>
-
     </section>
 
-
-
-    <section class="testimonials section">
-        <p class="testimonials__title section__title">Testimonials</p>
-
-        <div class="testimonials__glide-container">
-
-            <div class="testimonials__glide glide">
-                <div class="testimonials__track glide__track" data-glide-el="track">
-
-                    <ul class="testimonials__slides glide__slides">
-
-                        <li class="glide__slide">
-                            <div class="glide__slide-content testimonials-slide">
-                                <div class="testimonials-slide__info">
-                                    <p class="testimonials-slide__author">Martha Schmidt</p>
-                                    <div class="testimonials-slide__opinion">
-                                        <p class="testimonials-slide__date">05.08.2021</p>
-                                        <div class="testimonials-slide__stars"><i
-                                                class="fas fa-star testimonials-slide__icon"></i><i
-                                                class="fas fa-star testimonials-slide__icon"></i><i
-                                                class="fas fa-star testimonials-slide__icon"></i><i
-                                                class="fas fa-star testimonials-slide__icon"></i><i
-                                                class="far fa-star testimonials-slide__icon"></i></div>
-                                    </div>
-                                </div>
-                                <p class="testimonials-slide__text">
-                                    The pear chair is a kind of frameless furniture. This is a pear-shaped bag chair,
-                                    which can be for children and adults. The product consists of two covers (internal
-                                    and external), as well as a filler. Among professionals, it is called bin bag.
-                                </p>
-                            </div>
-                        </li>
-
-                        <li class="glide__slide">
-                            <div class="glide__slide-content testimonials-slide">
-                                <div class="testimonials-slide__info">
-                                    <p class="testimonials-slide__author">Martha Schmidt</p>
-                                    <div class="testimonials-slide__opinion">
-                                        <p class="testimonials-slide__date">05.08.2021</p>
-                                        <div class="testimonials-slide__stars"><i
-                                                class="fas fa-star testimonials-slide__icon"></i><i
-                                                class="fas fa-star testimonials-slide__icon"></i><i
-                                                class="fas fa-star testimonials-slide__icon"></i><i
-                                                class="fas fa-star testimonials-slide__icon"></i><i
-                                                class="far fa-star testimonials-slide__icon"></i></div>
-                                    </div>
-                                </div>
-                                <p class="testimonials-slide__text">
-                                    The pear chair is a kind of frameless furniture. This is a pear-shaped bag chair,
-                                    which can be for children and adults. The product consists of two covers (internal
-                                    and external), as well as a filler. Among professionals, it is called bin bag.
-                                </p>
-                            </div>
-                        </li>
-
-
-
-
-                    </ul>
-
-                    <div class="glide__arrows glide__arrows--testimonials" data-glide-el="controls">
-                        <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><i
-                                class="fas fa-chevron-left glide__icon"></i></button>
-                        <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><i
-                                class="fas fa-chevron-right glide__icon"></i></button>
-                    </div>
-
-                </div>
-            </div>
-
-        </div>
-
-        <button class="testimonials__button button white-text">Leave a testimonial</button>
-    </section>
 
     <section class="accessories section">
-        <p class="accessories__title section__title">Accessories</p>
+        <p class="accessories__title section__title">Recommended products</p>
 
         <div class="accessories__glide glide">
             <div class="accessories__track glide__track" data-glide-el="track">
@@ -431,6 +430,12 @@
 
     </section>
 
+
+
+
+
+
+
     <footer class="footer">
         <div class="footer__background"></div>
 
@@ -489,7 +494,7 @@
         integrity="sha512-IkLiryZhI6G4pnA3bBZzYCT9Ewk87U4DGEOz+TnRD3MrKqaUitt+ssHgn2X/sxoM7FxCP/ROUp6wcxjH/GcI5Q=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-    <script src="../js/app.js"></script>
+    <script src="../js/app-basket.js"></script>
 </body>
 
 </html>

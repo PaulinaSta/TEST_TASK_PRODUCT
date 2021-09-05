@@ -698,6 +698,8 @@ ul {
 
 .accessories__track {
     height: 100%;
+
+    width: 100%;
 }
 
 .accessories__slides {
