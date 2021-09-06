@@ -1,29 +1,32 @@
+// const addToCart = () => {
+//     $('.payment__link--1').on('click', function () {
+//         document.querySelector(".basket__items").classList.add("basket__items--show");
+//         // $('.basket__items').addClass('basket__items--show');
+//     });
+// };
+
+// addToCart();
+
+
+
 new Glide('.product__glide', {
     type: 'carousel',
-    perView: 1,
     gap: 30,
+    perView: 1,
 }).mount();
 
 new Glide('.testimonials__glide', {
     type: 'carousel',
-    perView: 2,
     gap: 30,
+    perView: 2,
+    breakpoints: {
+        1024: {
+            perView: 1
+        }
+    }
 }).mount();
 
 
-
-
-
-// const showCircle = () => {
-//     $('.add-item-index').on('click', function () {
-//         $('.icons__circle').addClass('icons__circle--show');
-//     });
-// };
-
-
-// const app = () => {
-//     showCircle();
-// };
 
 const toggleHeart = () => {
     $('.price__icon').on('click', function () {
@@ -53,10 +56,23 @@ const checkPayment = () => {
 };
 
 
+const showMenuTablet = () => {
+    $('.burger').on('click', function () {
+        $('.menu-tablet').toggleClass('menu-tablet--show');
+        $('.burger__icon').toggleClass('burger__icon--show');
+    });
+};
+
+
+
+
+
+
 const app = () => {
     toggleHeart();
     checkColor();
     checkPayment();
+    showMenuTablet();
 };
 
 app();
