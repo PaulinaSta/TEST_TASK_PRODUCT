@@ -81,6 +81,7 @@ ul {
 .button--white:hover {
     background-color: #fff;
     border: 2px solid var(--blue-color);
+    color: var(--blue-color);
 }
 
 .glide__arrow {
@@ -1054,6 +1055,12 @@ ul {
     border: 2px solid var(--bgc);
 }
 
+.summary__link {
+    line-height: 40px;
+    width: 100%;
+    display: block;
+}
+
 .summary__link--1 {
     color: var(--bgc);
 
@@ -1246,11 +1253,17 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 .agreement__icon {
     color: var(--green-color);
     font-size: 12px;
+    display: none;
+}
+
+.agreement__icon--show {
+    display: block;
 }
 
 .agreement__text {

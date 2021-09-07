@@ -412,6 +412,42 @@
         left: 0;
         width: 100%;
     }
+
+    .delivery__container {
+        grid-template-columns: 1fr;
+        grid-template-areas: "name""number""mail""city""street""apartment""details""edit""confirm";
+        grid-gap: 10px;
+        padding-bottom: 0;
+        border-bottom: none;
+        margin-bottom: 35px;
+    }
+
+    .delivery__input {
+        font: 16px system-ui;
+        margin-right: 0;
+        padding: 20px 25px;
+        height: auto;
+        box-shadow: 0px 2px 7px 2px rgba(19, 53, 60, 0.15);
+        color: var(--opacity-font-color-50);
+    }
+
+    .delivery__input::placeholder {
+        color: var(--opacity-font-color-50);
+    }
+
+    .delivery__details {
+        margin-bottom: 30px;
+    }
+
+    .delivery__button {
+        height: 40px;
+        padding: 0;
+    }
+
+
+
+
+
 }
 
 @media screen and (max-width: 414px) and (orientation: portrait) {

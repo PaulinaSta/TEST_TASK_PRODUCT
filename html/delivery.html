@@ -162,13 +162,14 @@
                     </div>
                 </div>
 
-                <button class="details__button button">Print delivery</button>
+                <button class="details__button button button--white">Print delivery</button>
             </div>
 
 
             <button type="submit" class="delivery__button delivery__button--confirm button white-text">Confirm
                 delivery</button>
-            <button type="edit" class="delivery__button delivery__button--edit button">Edit delivery</button>
+            <button type="edit" class="delivery__button delivery__button--edit button button--white">Edit
+                delivery</button>
 
         </div>
 
@@ -271,7 +272,12 @@
         $('.burger').on('click', function () {
             $('.menu--mobile').toggleClass('menu--mobile--show');
             $('.burger__icon').toggleClass('burger__icon--show');
-        })
+        }),
+
+
+            $('.agreement__check').on('click', function () {
+                $('.agreement__icon').toggleClass('agreement__icon--show');
+            });
 
     </script>
 

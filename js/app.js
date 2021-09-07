@@ -55,10 +55,18 @@ const checkPayment = () => {
     });
 };
 
+
+const checkAgree = () => {
+    $('.agreement__check').on('click', function () {
+        $('.agreement__icon').addClass('agreement__icon--show');
+    });
+};
+
 const app = () => {
     toggleHeart();
     checkColor();
     checkPayment();
+    checkAgree();
 };
 
 app();

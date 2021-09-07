@@ -246,7 +246,7 @@
 
 
                 <button
-                    class="summary__button summary__button--form button"><a href="./delivery.html" class="summary__link summary__link--1">Fill in the form</a></button>
+                    class="summary__button summary__button--form button button--white"><a href="./delivery.html" class="summary__link link-transition summary__link--1">Fill in the form</a></button>
 
 
                 <div class="summary__total total">
@@ -480,7 +480,12 @@
             $('.basket__button--arrow').on('click', function () {
                 $('.basket-cart__icon').toggleClass('basket-cart__icon--show');
                 $('.basket__item--mobile').toggleClass('basket__item--mobile--show');
-            })
+            }),
+
+
+            $('.agreement__check').on('click', function () {
+                $('.agreement__icon').toggleClass('agreement__icon--show');
+            });
     </script>
 
 
