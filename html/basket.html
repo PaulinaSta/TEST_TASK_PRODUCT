@@ -165,8 +165,6 @@
 
                         <button class="basket__button button white-text add-item-basket" href="#" data-name="Chair"
                             data-price="599.00"><i class="fas fa-plus basket__icon"></i></button>
-                        <!-- <button class="basket__button button white-text add-to-cart" href="#" data-name="Chair"
-                            data-price="599.00"><i class="fas fa-plus basket__icon"></i></button> -->
 
 
                     </div>
@@ -209,8 +207,6 @@
                         <button class="basket__button basket__button--mobile button white-text add-item-basket" href="#"
                             data-name="Chair" data-price="599.00"><i
                                 class="fas fa-plus basket__icon basket__icon--mobile"></i></button>
-                        <!-- <button class="basket__button button white-text add-to-cart" href="#" data-name="Chair"
-                            data-price="599.00"><i class="fas fa-plus basket__icon"></i></button> -->
                     </div>
 
                     <div class="basket__name-price--mobile">
@@ -465,7 +461,6 @@
 
 
     <script src="../js/shoppingCart.js"></script>
-    <script src="../js/app-accessories.js"></script>
     <script src="../js/app.js"></script>
 
 
@@ -485,7 +480,23 @@
 
             $('.agreement__check').on('click', function () {
                 $('.agreement__icon').toggleClass('agreement__icon--show');
-            });
+            }),
+
+
+            new Glide('.accessories', {
+                type: 'carousel',
+                gap: 30,
+                perView: 4,
+                breakpoints: {
+                    1024: {
+                        perView: 3
+                    },
+                    767: {
+                        perView: 2,
+                        gap: 0,
+                    }
+                }
+            }).mount()
     </script>
 
 

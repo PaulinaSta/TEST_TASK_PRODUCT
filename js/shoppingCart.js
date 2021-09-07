@@ -1,8 +1,4 @@
-// ***************************************************
-// Shopping Cart functions
-
 var shoppingCart = (function () {
-    // Private methods and properties
     var cart = [];
 
     function Item(name, price, count) {
@@ -26,7 +22,6 @@ var shoppingCart = (function () {
 
 
 
-    // Public methods and properties
     var obj = {};
 
     obj.addItemToCart = function (name, price, count) {

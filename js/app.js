@@ -1,14 +1,3 @@
-// const addToCart = () => {
-//     $('.payment__link--1').on('click', function () {
-//         document.querySelector(".basket__items").classList.add("basket__items--show");
-//         // $('.basket__items').addClass('basket__items--show');
-//     });
-// };
-
-// addToCart();
-
-
-
 new Glide('.product__glide', {
     type: 'carousel',
     gap: 30,
