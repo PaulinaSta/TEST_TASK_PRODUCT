@@ -4,9 +4,8 @@
         height: 300px;
     }
 
-    .image__img {
-        /* height: 70px; */
-    }
+
+
 
     .basket__added {
         display: none;
@@ -16,14 +15,12 @@
 
 @media screen and (max-width: 1024px) {
 
-
-
     .menu {
         display: none;
     }
 
-    .menu-tablet {
-        /* display: flex; */
+    .menu--tablet {
+        display: flex;
     }
 
     .menu__item {
@@ -76,7 +73,6 @@
         display: flex;
     }
 
-
     .product__container {
         /* grid-template-columns: 0.33fr 0.33fr 0.33fr 1fr; */
         grid-template-rows: 1fr auto 12vw auto;
@@ -94,47 +90,6 @@
         height: 60px;
     }
 
-    .remove {
-        display: none;
-    }
-
-    .capitalize {
-        text-transform: capitalize;
-    }
-
-
-    .chair__info {
-        top: 20px;
-        left: 20px;
-        right: 20px;
-    }
-
-    .chair__name-price {
-        top: auto;
-        bottom: 0;
-        left: 0;
-        display: flex;
-        width: 100%;
-        padding: 20px;
-        justify-content: space-between;
-    }
-
-    .glide__arrows--product {
-        display: none;
-    }
-
-    .price__name-price {
-        flex-direction: column;
-    }
-
-    .price__favorite {
-        flex-direction: column;
-        align-items: flex-end;
-    }
-
-    .price__icon {
-        display: none;
-    }
 
 
 
@@ -142,35 +97,11 @@
 
 
 
-    .payment__category {
-        flex-direction: column;
-        align-items: flex-start;
-    }
 
-    .payment__subtitle {
-        margin-bottom: 15px;
-    }
 
-    .payment__methods {
-        width: 100%;
-    }
 
-    .payment__method {
-        flex-direction: column;
-        align-items: flex-start;
-        padding-left: 0;
-        border-left: none;
-        margin-left: 0;
-    }
 
-    .payment__text {
-        order: 1;
-        margin-bottom: 5px;
-    }
 
-    .payment__check {
-        order: 2;
-    }
 
     .payment__buttons {
         position: absolute;
@@ -178,179 +109,4 @@
         left: 0;
         right: 0;
     }
-}
-
-@media screen and (max-width: 767px) and (orientation: portrait) {
-    .icons {
-        display: none;
-    }
-
-    .navigation__content {
-        justify-content: space-between;
-    }
-
-
-
-    .menu-tablet {
-        right: 0;
-        top: 0;
-        left: 0;
-        height: 100vh;
-        width: 100%;
-        padding: 100px 30px;
-        border-left: none;
-        transform: translateY(-100%);
-        align-items: center;
-    }
-
-    .menu-tablet--show {
-        transform: translateY(0);
-    }
-
-    .header__aside {
-        display: none;
-    }
-
-
-
-    .header__search-form--tablet {
-        display: flex;
-        background-color: var(--bgc);
-        margin-bottom: 30px;
-        box-shadow: 0px 2px 7px 2px rgba(8, 30, 35, 0.2);
-        color: #fff;
-        width: 100%;
-    }
-
-    .form__input {
-        height: 40px;
-        margin-right: 0;
-        text-transform: capitalize;
-        color: #fff;
-
-    }
-
-    ::placeholder {
-        color: #fff;
-    }
-
-    .form__icon:hover {
-        color: var(--blue-color);
-    }
-
-    .catalog__link {
-        border-bottom: none;
-        padding-bottom: 0;
-        padding-left: 0;
-    }
-
-    .menu__item {
-        margin-left: 0;
-        width: 100%;
-        text-align: center;
-    }
-
-    .menu__item:nth-of-type(1) {
-        padding-top: 30px;
-        border-top: 1px solid var(--opacity-white-30);
-    }
-
-    .menu__item:nth-of-type(4) {
-        padding-bottom: 30px;
-        border-bottom: 1px solid var(--opacity-white-30);
-    }
-
-
-    .icons--mobile {
-        display: block;
-        border-right: none;
-        padding-right: 0;
-        text-align: center;
-        display: flex;
-        align-self: stretch;
-        justify-content: center;
-        padding: 0 100px;
-    }
-
-
-    .icons__link:nth-of-type(1) {
-        margin-left: 0;
-    }
-
-
-
-
-    .product__container {
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 360px 25vw auto auto auto;
-        grid-template-areas: "chair chair chair""image1 image2 image3""price price price""specifications specifications specifications""payment payment payment";
-        grid-gap: 20px;
-        position: relative;
-        padding-bottom: 60px;
-    }
-
-    .payment__buttons {
-        flex-direction: column;
-        position: static;
-    }
-
-    .payment__button--1 {
-        margin-right: 0;
-    }
-
-    .payment__button--2 {
-        position: absolute;
-        bottom: 0;
-        left: 25px;
-        right: 0;
-        width: calc(100vw - 130px);
-    }
-
-    .testimonials__glide-container {
-        padding: 0;
-    }
-
-    .glide__arrows--testimonials {
-        display: none;
-    }
-
-    .testimonials__button {
-        margin-left: 0;
-    }
-
-    .glide__arrows--accessories {
-        display: none;
-    }
-
-    .testimonials {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .footer {
-        flex-direction: column;
-        padding: 60px 0;
-    }
-
-    .contacts__items {
-        display: none;
-    }
-
-    .footer__account {
-        margin-bottom: 30px;
-    }
-
-    .contacts__social-media--mobile {
-        display: flex;
-        margin: 0 60px;
-        padding-top: 40px;
-        border-top: 1px solid var(--opacity-white-30);
-        align-self: stretch;
-        justify-content: center;
-    }
-
-    .contacts__link:nth-last-of-type(1) .contacts__icon--social-media {
-        margin-right: 0;
-    }
-
 }

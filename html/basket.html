@@ -6,25 +6,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Basket</title>
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 
+    <!-- Glide -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/css/glide.core.min.css"
         integrity="sha512-YQlbvfX5C6Ym6fTUSZ9GZpyB3F92hmQAZTO5YjciedwAaGRI9ccNs4iw2QTCJiSPheUQZomZKHQtuwbHkA9lgw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/css/glide.theme.min.css"
         integrity="sha512-wCwx+DYp8LDIaTem/rpXubV/C1WiNRsEVqoztV0NZm8tiTvsUeSlA/Uz02VTGSiqfzAHD4RnqVoevMcRZgYEcQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- Style -->
     <link rel="stylesheet" href="../css/glide-accessories.css">
-    <link rel="stylesheet" href="../css/media.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/media-queries.css">
 </head>
 
 <body>
+    <!-- Header -->
     <header class="header">
         <nav class="header__navigation navigation">
             <div class="navigation__background"></div>
@@ -32,37 +36,71 @@
                 <div class="navigation__logo logo">
                     <h1 class="logo__text"><a href="./index.html" class="logo__link white-text">Logo</a></h1>
                 </div>
-                <ul class="navigation__menu menu">
-                    <li class="menu__item"><a href="#" class="menu__link white-text">Categories</a></li>
-                    <li class="menu__item"><a href="#" class="menu__link white-text">Payment</a></li>
-                    <li class="menu__item"><a href="#" class="menu__link white-text">Warranty</a></li>
-                    <li class="menu__item"><a href="#" class="menu__link white-text">Credit</a></li>
+                <ul class="navigation__menu menu menu--desktop">
+                    <li class="menu__item"><a href="#" class="menu__link link-transition white-text">Categories</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link link-transition white-text">Payment</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link link-transition white-text">Warranty</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link link-transition white-text">Credit</a></li>
                 </ul>
-                <div class="navigation__catalog catalog">
-                    <a href="#" class="catalog__link white-text">Catalog <i class="fas fa-chevron-down catalog__icon"></i></a>
+                <div class="navigation__catalog catalog catalog--desktop">
+                    <a href="#" class="catalog__link link-transition white-text">Catalog <i class="fas fa-chevron-down catalog__icon"></i></a>
                 </div>
 
-                <div class="navigation__icons icons">
-                    <a href="#" class="icons__link white-text">
+                <div class="navigation__icons icons icons--desktop">
+                    <a href="#" class="icons__link link-transition white-text">
                         <i class="fas fa-heart icons__icon icons__icon--favorites"></i>
-                        <!-- <div class="icons__circle">
-                            <p class="icons__circle-value white-text">3</p>
-                        </div> -->
                     </a>
-                    <a href="./basket.html" class="icons__link white-text">
+                    <a href="./basket.html" class="icons__link link-transition white-text">
                         <i class="fas fa-shopping-cart icons__icon icons__icon--shopping-cart"></i>
                         <div class="icons__circle">
                             <p class="icons__circle-value white-text"><span id="count-cart-basket-nav">X</span></p>
                         </div>
                     </a>
-                    <a href="#" class="icons__link white-text">
+                    <a href="#" class="icons__link link-transition white-text">
                         <i class="fas fa-user icons__icon icons__icon--log-in"></i>
                     </a>
                 </div>
 
+                <div class="navigation__burger burger"><i
+                        class="fas fa-bars burger__icon burger__icon--show white-text"></i>
+                    <i class="fas fa-times burger__icon white-text"></i>
+                </div>
+
+
+                <ul class="navigation__menu menu menu--mobile">
+                    <form class="header__search-form header__search-form form">
+                        <input type="text" placeholder="Product name" class="form__input">
+                        <button type="submit" class="form__button"><i class="fas fa-search form__icon"></i></button>
+                    </form>
+
+                    <a href="#" class="catalog__link catalog__link link-transition white-text">Catalog <i class="fas fa-chevron-down catalog__icon catalog__icon--mobile"></i></a>
+                    <li class="menu__item"><a href="#" class="menu__link link-transition white-text">Categories</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link link-transition white-text">Payment</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link link-transition white-text">Warranty</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link link-transition white-text">Credit</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link link-transition white-text">Delivery</a></li>
+
+                    <div class="navigation__icons icons icons--mobile">
+                        <a href="#" class="icons__link link-transition white-text">
+                            <i class="fas fa-heart icons__icon icons__icon--favorites"></i>
+                
+                        </a>
+                        <a href="./basket.html" class="icons__link link-transition white-text">
+                            <i class="fas fa-shopping-cart icons__icon icons__icon--shopping-cart"></i>
+                            <div class="icons__circle">
+                                <p class="icons__circle-value white-text"><span id="count-cart-basket-nav--mobile">X</span></p>
+                            </div>
+                        </a>
+                        <a href="#" class="icons__link link-transition white-text">
+                            <i class="fas fa-user icons__icon icons__icon--log-in"></i>
+                        </a>
+                    </div> -->
+                </ul>
+
             </div>
         </nav>
-        <div class="header__aside">
+
+        <div class="header__aside header__aside--desktop">
             <ul class="header__direction direction">
                 <li class="direction__item">
                     <a href="#" class="direction__link white-text">Home <i class="fas fa-caret-right direction__icon"></i></a>
@@ -101,27 +139,29 @@
     <section class="basket section">
         <p class="basket__title section__title">Basket</p>
         <div class="basket__container">
-            <div class="basket__items basket__items--show">
+            <div class="basket__items">
 
 
-                <div class="basket__item">
+                <div class="basket__item basket__item--desktop">
                     <img src="../img/smallest-chair1.png" alt="" class="basket__img">
 
                     <div class="basket__name-price">
-                        <p class="basket__name">Pear chair</p>
+                        <p class="basket__name">Pear chair
+                            <span class="basket__count">(<span id="count-cart-basket-cart" class="basket__count">X</span>)</span>
+                        </p>
                         <p class="basket__price">599.00</p>
                     </div>
 
-                    <div class="basket__added">
+                    <div class="basket__added basket__added--desktop">
                         <p class="basket__text">Added:</p>
                         <p class="basket__date">05.08.2021</p>
                     </div>
 
-                    <div class="basket__buttons">
+                    <div class="basket__buttons basket__buttons--desktop">
                         <button class="basket__button button white-text remove-item" href="#" data-name="Chair"
                             data-price="599.00"><i class="fas fa-minus basket__icon"></i></button>
 
-                        <p class="basket__value"><span id="count-cart-basket-cart">X</span></p>
+                        <p class="basket__value"><span id="count-cart-basket-cart--desktop">X</span></p>
 
                         <button class="basket__button button white-text add-item-basket" href="#" data-name="Chair"
                             data-price="599.00"><i class="fas fa-plus basket__icon"></i></button>
@@ -131,11 +171,18 @@
 
                     </div>
 
-                    <div class="basket__name-price">
+                    <div class="basket__name-price basket__name-price--desktop">
                         <p class="basket__name">Total amount</p>
                         <p class="basket__price"><span id="total-cart-basket-cart"></span></p>
                     </div>
 
+
+                    <div class="basket__button-container basket__button-container--mobile">
+                        <button class="basket__button basket__button--arrow basket__button--delete button white-text"
+                            href="#" data-name="Chair" data-price="599.00"><i
+                                class="fas fa-chevron-down basket-cart__icon basket-cart__icon--show"></i><i
+                                class="fas fa-chevron-up basket-cart__icon"></i></button>
+                    </div>
 
                     <div class="basket__button-container">
                         <button class="basket__button basket__button--delete button white-text clear-cart" href="#"
@@ -144,15 +191,7 @@
                 </div>
 
 
-
-
-                <!-- <div class="basket__item">
-                    <img src="../img/smallest-chair1.png" alt="" class="basket__img">
-
-                    <div class="basket__name-price">
-                        <p class="basket__name">Pear chair</p>
-                        <p class="basket__price">599.00</p>
-                    </div>
+                <div class="basket__item basket__item--mobile">
 
                     <div class="basket__added">
                         <p class="basket__text">Added:</p>
@@ -160,124 +199,28 @@
                     </div>
 
                     <div class="basket__buttons">
-                        <button class="basket__button button white-text"><i
-                                class="fas fa-minus basket__icon"></i></button>
 
-                        <p class="basket__value">01</p>
-                        <button class="basket__button button white-text"><i
-                                class="fas fa-plus basket__icon"></i></button>
+                        <button class="basket__button basket__button--mobile button remove-item" href="#"
+                            data-name="Chair" data-price="599.00"><i
+                                class="fas fa-minus basket__icon basket__icon--mobile"></i></button>
+
+                        <p class="basket__value"><span id="count-cart-basket-cart--mobile">X</span></p>
+
+                        <button class="basket__button basket__button--mobile button white-text add-item-basket" href="#"
+                            data-name="Chair" data-price="599.00"><i
+                                class="fas fa-plus basket__icon basket__icon--mobile"></i></button>
+                        <!-- <button class="basket__button button white-text add-to-cart" href="#" data-name="Chair"
+                            data-price="599.00"><i class="fas fa-plus basket__icon"></i></button> -->
                     </div>
 
-                    <div class="basket__name-price">
-                        <p class="basket__name">Total amount</p>
-                        <p class="basket__price">599.00</p>
+                    <div class="basket__name-price--mobile">
+                        <p class="basket__name">Total</p>
+                        <p class="basket__price"><span id="total-cart-basket-cart--mobile"></span></p>
                     </div>
 
 
-                    <div class="basket__button-container">
-                        <button class="basket__button basket__button--delete button white-text"><i
-                                class="fas fa-times"></i></button>
-                    </div>
+
                 </div>
-                <div class="basket__item">
-                    <img src="../img/smallest-chair1.png" alt="" class="basket__img">
-
-                    <div class="basket__name-price">
-                        <p class="basket__name">Pear chair</p>
-                        <p class="basket__price">599.00</p>
-                    </div>
-
-                    <div class="basket__added">
-                        <p class="basket__text">Added:</p>
-                        <p class="basket__date">05.08.2021</p>
-                    </div>
-
-                    <div class="basket__buttons">
-                        <button class="basket__button button white-text"><i
-                                class="fas fa-minus basket__icon"></i></button>
-
-                        <p class="basket__value">01</p>
-                        <button class="basket__button button white-text"><i
-                                class="fas fa-plus basket__icon"></i></button>
-                    </div>
-
-                    <div class="basket__name-price">
-                        <p class="basket__name">Total amount</p>
-                        <p class="basket__price">599.00</p>
-                    </div>
-
-
-                    <div class="basket__button-container">
-                        <button class="basket__button basket__button--delete button white-text"><i
-                                class="fas fa-times"></i></button>
-                    </div>
-                </div>
-                <div class="basket__item">
-                    <img src="../img/smallest-chair1.png" alt="" class="basket__img">
-
-                    <div class="basket__name-price">
-                        <p class="basket__name">Pear chair</p>
-                        <p class="basket__price">599.00</p>
-                    </div>
-
-                    <div class="basket__added">
-                        <p class="basket__text">Added:</p>
-                        <p class="basket__date">05.08.2021</p>
-                    </div>
-
-                    <div class="basket__buttons">
-                        <button class="basket__button button white-text"><i
-                                class="fas fa-minus basket__icon"></i></button>
-
-                        <p class="basket__value">01</p>
-                        <button class="basket__button button white-text"><i
-                                class="fas fa-plus basket__icon"></i></button>
-                    </div>
-
-                    <div class="basket__name-price">
-                        <p class="basket__name">Total amount</p>
-                        <p class="basket__price">599.00</p>
-                    </div>
-
-
-                    <div class="basket__button-container">
-                        <button class="basket__button basket__button--delete button white-text"><i
-                                class="fas fa-times"></i></button>
-                    </div>
-                </div>
-                <div class="basket__item basket__item--last">
-                    <img src="../img/smallest-chair1.png" alt="" class="basket__img">
-
-                    <div class="basket__name-price">
-                        <p class="basket__name">Pear chair</p>
-                        <p class="basket__price">599.00</p>
-                    </div>
-
-                    <div class="basket__added">
-                        <p class="basket__text">Added:</p>
-                        <p class="basket__date">05.08.2021</p>
-                    </div>
-
-                    <div class="basket__buttons">
-                        <button class="basket__button button white-text"><i
-                                class="fas fa-minus basket__icon"></i></button>
-
-                        <p class="basket__value">01</p>
-                        <button class="basket__button button white-text"><i
-                                class="fas fa-plus basket__icon"></i></button>
-                    </div>
-
-                    <div class="basket__name-price">
-                        <p class="basket__name">Total amount</p>
-                        <p class="basket__price">599.00</p>
-                    </div>
-
-
-                    <div class="basket__button-container">
-                        <button class="basket__button basket__button--delete button white-text"><i
-                                class="fas fa-times"></i></button>
-                    </div>
-                </div> -->
 
             </div>
             <div class="basket__summary summary">
@@ -313,17 +256,17 @@
                 </div>
 
 
+                <div class="summary__btn-check-wrapper">
+                    <button
+                        class="summary__button summary__button--order button"><a href="./order.html" class="summary__link white-text">Make an order</a></button>
 
-                <button
-                    class="summary__button summary__button--order button"><a href="./order.html" class="summary__link white-text">Make an order</a></button>
-
-
-
-
-                <div class="summary__agreement agreement">
-                    <div class="agreement__check"><i class="fas fa-check agreement__icon"></i></div>
-                    <p class="agreement__text">I agree to the <a href="#" class="agreement__link">Privacy Policy</a></p>
+                    <div class="summary__agreement agreement">
+                        <div class="agreement__check"><i class="fas fa-check agreement__icon"></i></div>
+                        <p class="agreement__text">I agree to the <a href="#" class="agreement__link">Privacy Policy</a>
+                        </p>
+                    </div>
                 </div>
+
 
             </div>
 
@@ -458,20 +401,20 @@
             <p class="contacts__title white-text">Contacts</p>
             <ul class="contacts__items">
                 <li class="contacts__item">
-                    <a href="tel:1(123)4443322" class="contacts__link"><i class="fas fa-phone-alt contacts__icon"></i> 1 (123) 444 33 22 </a>
+                    <a href="tel:1(123)4443322" class="contacts__link link-transition"><i class="fas fa-phone-alt contacts__icon"></i> 1 (123) 444 33 22 </a>
                 </li>
                 <li class="contacts__item">
-                    <a href="mailto:collection@info.com" class="contacts__link"><i class="fas fa-envelope contacts__icon"></i> collection@info.com</a>
+                    <a href="mailto:collection@info.com" class="contacts__link link-transition"><i class="fas fa-envelope contacts__icon"></i> collection@info.com</a>
                 </li>
                 <li class="contacts__item">
-                    <a href="#" class="contacts__link"><i class="fas fa-map-marker-alt contacts__icon"></i> ua. nicolaev st.lenina 123</a>
+                    <a href="#" class="contacts__link link-transition"><i class="fas fa-map-marker-alt contacts__icon"></i> ua. nicolaev st.lenina 123</a>
                 </li>
                 <li class="contacts__item">
                     <div class="contacts__social-media">
-                        <a href="#" class="contacts__link"><i class="fab fa-facebook-f contacts__icon--social-media"></i></a>
-                        <a href="#" class="contacts__link"><i class="fab fa-instagram contacts__icon--social-media"></i></a>
-                        <a href="#" class="contacts__link"><i class="fab fa-twitter contacts__icon--social-media"></i></a>
-                        <a href="#" class="contacts__link"><i class="fab fa-google-plus-g contacts__icon--social-media"></i></a>
+                        <a href="#" class="contacts__link link-transition"><i class="fab fa-facebook-f contacts__icon--social-media"></i></a>
+                        <a href="#" class="contacts__link link-transition"><i class="fab fa-instagram contacts__icon--social-media"></i></a>
+                        <a href="#" class="contacts__link link-transition"><i class="fab fa-twitter contacts__icon--social-media"></i></a>
+                        <a href="#" class="contacts__link link-transition"><i class="fab fa-google-plus-g contacts__icon--social-media"></i></a>
                     </div>
                 </li>
             </ul>
@@ -479,29 +422,36 @@
         <div class="footer__information">
             <p class="contacts__title white-text">Information</p>
             <ul class="contacts__items">
-                <li class="contacts__item"><a href="#" class="contacts__link">About Us</a></li>
-                <li class="contacts__item"><a href="#" class="contacts__link">Our history</a></li>
-                <li class="contacts__item"><a href="#" class="contacts__link">Contacts</a></li>
-                <li class="contacts__item"><a href="#" class="contacts__link">Delivery info</a></li>
+                <li class="contacts__item"><a href="#" class="contacts__link link-transition">About Us</a></li>
+                <li class="contacts__item"><a href="#" class="contacts__link link-transition">Our history</a></li>
+                <li class="contacts__item"><a href="#" class="contacts__link link-transition">Contacts</a></li>
+                <li class="contacts__item"><a href="#" class="contacts__link link-transition">Delivery info</a></li>
             </ul>
         </div>
         <div class="footer__shop">
             <p class="contacts__title white-text">Shop</p>
             <ul class="contacts__items">
-                <li class="contacts__item"><a href="#" class="contacts__link">Oxford</a></li>
-                <li class="contacts__item"><a href="#" class="contacts__link">On laces</a></li>
-                <li class="contacts__item"><a href="#" class="contacts__link">Without laces</a></li>
-                <li class="contacts__item"><a href="#" class="contacts__link">Stock</a></li>
+                <li class="contacts__item"><a href="#" class="contacts__link link-transition">Oxford</a></li>
+                <li class="contacts__item"><a href="#" class="contacts__link link-transition">On laces</a></li>
+                <li class="contacts__item"><a href="#" class="contacts__link link-transition">Without laces</a></li>
+                <li class="contacts__item"><a href="#" class="contacts__link link-transition">Stock</a></li>
             </ul>
         </div>
         <div class="footer__account">
             <p class="contacts__title white-text">Account</p>
             <ul class="contacts__items">
-                <li class="contacts__item"><a href="#" class="contacts__link">My account</a></li>
-                <li class="contacts__item"><a href="#" class="contacts__link">Wish list</a></li>
-                <li class="contacts__item"><a href="#" class="contacts__link">Newsletter</a></li>
-                <li class="contacts__item"><a href="#" class="contacts__link">My order</a></li>
+                <li class="contacts__item"><a href="#" class="contacts__link link-transition">My account</a></li>
+                <li class="contacts__item"><a href="#" class="contacts__link link-transition">Wish list</a></li>
+                <li class="contacts__item"><a href="#" class="contacts__link link-transition">Newsletter</a></li>
+                <li class="contacts__item"><a href="#" class="contacts__link link-transition">My order</a></li>
             </ul>
+        </div>
+
+        <div class="contacts__social-media contacts__social-media--mobile">
+            <a href="#" class="contacts__link link-transition"><i class="fab fa-facebook-f contacts__icon--social-media"></i></a>
+            <a href="#" class="contacts__link link-transition"><i class="fab fa-instagram contacts__icon--social-media"></i></a>
+            <a href="#" class="contacts__link link-transition"><i class="fab fa-twitter contacts__icon--social-media"></i></a>
+            <a href="#" class="contacts__link link-transition"><i class="fab fa-google-plus-g contacts__icon--social-media"></i></a>
         </div>
     </footer>
 
@@ -515,11 +465,23 @@
 
 
     <script src="../js/shoppingCart.js"></script>
-
+    <script src="../js/app-accessories.js"></script>
     <script src="../js/app.js"></script>
 
-    <script src="../js/app-accessories.js"></script>
 
+    <script>
+
+        $('.burger').on('click', function () {
+            $('.menu--mobile').toggleClass('menu--mobile--show');
+            $('.burger__icon').toggleClass('burger__icon--show');
+        }),
+
+
+            $('.basket__button--arrow').on('click', function () {
+                $('.basket-cart__icon').toggleClass('basket-cart__icon--show');
+                $('.basket__item--mobile').toggleClass('basket__item--mobile--show');
+            })
+    </script>
 
 
 </body>

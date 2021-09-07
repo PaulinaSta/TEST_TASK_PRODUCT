@@ -134,13 +134,20 @@ function displayCart() {
     var output = "";
 
     $("#count-cart-index-nav").html(shoppingCart.countCart());
+    $("#count-cart-index-nav--mobile").html(shoppingCart.countCart());
     $("#count-cart-basket-nav").html(shoppingCart.countCart());
+    $("#count-cart-basket-nav--mobile").html(shoppingCart.countCart());
+    $("#count-cart-basket-cart--desktop").html(shoppingCart.countCart());
     $("#count-cart-basket-cart").html(shoppingCart.countCart());
+    $("#count-cart-basket-cart--mobile").html(shoppingCart.countCart());
     $("#count-cart-basket-summary").html(shoppingCart.countCart());
     $("#count-cart-delivery-nav").html(shoppingCart.countCart());
+    $("#count-cart-delivery-nav--mobile").html(shoppingCart.countCart());
     $("#count-cart-order-nav").html(shoppingCart.countCart());
+    $("#count-cart-order-nav--mobile").html(shoppingCart.countCart());
 
     $("#total-cart-basket-cart").html(shoppingCart.totalCart());
+    $("#total-cart-basket-cart--mobile").html(shoppingCart.totalCart());
     $("#total-cart-basket-confirm").html(shoppingCart.totalCart());
     $("#total-cart-basket-order").html(shoppingCart.totalCart());
 }

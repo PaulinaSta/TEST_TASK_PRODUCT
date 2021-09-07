@@ -6,26 +6,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product</title>
+
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 
+    <!-- Glide -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/css/glide.core.min.css"
         integrity="sha512-YQlbvfX5C6Ym6fTUSZ9GZpyB3F92hmQAZTO5YjciedwAaGRI9ccNs4iw2QTCJiSPheUQZomZKHQtuwbHkA9lgw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/css/glide.theme.min.css"
         integrity="sha512-wCwx+DYp8LDIaTem/rpXubV/C1WiNRsEVqoztV0NZm8tiTvsUeSlA/Uz02VTGSiqfzAHD4RnqVoevMcRZgYEcQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="../css/glide-accessories.css">
+
+    <!-- Style -->
     <link rel="stylesheet" href="../dist/css/lightbox.css">
+    <link rel="stylesheet" href="../css/glide-accessories.css">
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/media.css">
+    <link rel="stylesheet" href="../css/media-queries.css">
 </head>
 
 <body>
+
+    <!-- Header -->
     <header class="header">
         <nav class="header__navigation navigation">
             <div class="navigation__background"></div>
@@ -33,55 +39,19 @@
                 <div class="navigation__logo logo">
                     <h1 class="logo__text"><a href="./index.html" class="logo__link white-text">Logo</a></h1>
                 </div>
-                <ul class="navigation__menu menu">
+                <ul class="navigation__menu menu menu--desktop">
                     <li class="menu__item"><a href="#" class="menu__link link-transition white-text">Categories</a></li>
                     <li class="menu__item"><a href="#" class="menu__link link-transition white-text">Payment</a></li>
                     <li class="menu__item"><a href="#" class="menu__link link-transition white-text">Warranty</a></li>
                     <li class="menu__item"><a href="#" class="menu__link link-transition white-text">Credit</a></li>
                 </ul>
-                <div class="navigation__catalog catalog">
+                <div class="navigation__catalog catalog catalog--desktop">
                     <a href="#" class="catalog__link link-transition white-text">Catalog <i class="fas fa-chevron-down catalog__icon"></i></a>
                 </div>
 
-                <ul class="menu-tablet">
-
-                    <form class="header__search-form header__search-form--tablet form">
-                        <input type="text" placeholder="Product name" class="form__input">
-                        <button type="submit" class="form__button"><i class="fas fa-search form__icon"></i></button>
-                    </form>
-
-                    <a href="#" class="catalog__link link-transition white-text">Catalog <i class="fas fa-chevron-down catalog__icon"></i></a>
-                    <li class="menu__item"><a href="#" class="menu__link link-transition white-text">Categories</a></li>
-                    <li class="menu__item"><a href="#" class="menu__link link-transition white-text">Payment</a></li>
-                    <li class="menu__item"><a href="#" class="menu__link link-transition white-text">Warranty</a></li>
-                    <li class="menu__item"><a href="#" class="menu__link link-transition white-text">Credit</a></li>
-
-                    <div class="navigation__icons icons icons--mobile">
-                        <a href="#" class="icons__link link-transition white-text">
-                            <i class="fas fa-heart icons__icon icons__icon--favorites"></i>
-                            <!-- <div class="icons__circle">
-                                <p class="icons__circle-value white-text">3</p>
-                            </div> -->
-                        </a>
-                        <a href="./basket.html" class="icons__link link-transition white-text">
-                            <i class="fas fa-shopping-cart icons__icon icons__icon--shopping-cart"></i>
-                            <div class="icons__circle">
-                                <p class="icons__circle-value white-text"><span id="count-cart-index-nav">X</span></p>
-                            </div>
-                        </a>
-                        <a href="#" class="icons__link link-transition white-text">
-                            <i class="fas fa-user icons__icon icons__icon--log-in"></i>
-                        </a>
-                    </div>
-                </ul>
-
-
-                <div class="navigation__icons icons">
+                <div class="navigation__icons icons icons--desktop">
                     <a href="#" class="icons__link link-transition white-text">
                         <i class="fas fa-heart icons__icon icons__icon--favorites"></i>
-                        <!-- <div class="icons__circle">
-                            <p class="icons__circle-value white-text">3</p>
-                        </div> -->
                     </a>
                     <a href="./basket.html" class="icons__link link-transition white-text">
                         <i class="fas fa-shopping-cart icons__icon icons__icon--shopping-cart"></i>
@@ -99,9 +69,41 @@
                     <i class="fas fa-times burger__icon white-text"></i>
                 </div>
 
+
+                <ul class="navigation__menu menu menu--mobile">
+                    <form class="header__search-form header__search-form form">
+                        <input type="text" placeholder="Product name" class="form__input">
+                        <button type="submit" class="form__button"><i class="fas fa-search form__icon"></i></button>
+                    </form>
+
+                    <a href="#" class="catalog__link catalog__link link-transition white-text">Catalog <i class="fas fa-chevron-down catalog__icon catalog__icon--mobile"></i></a>
+                    <li class="menu__item"><a href="#" class="menu__link link-transition white-text">Categories</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link link-transition white-text">Payment</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link link-transition white-text">Warranty</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link link-transition white-text">Credit</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link link-transition white-text">Delivery</a></li>
+
+                    <div class="navigation__icons icons icons--mobile">
+                        <a href="#" class="icons__link link-transition white-text">
+                            <i class="fas fa-heart icons__icon icons__icon--favorites"></i>
+                
+                        </a>
+                        <a href="./basket.html" class="icons__link link-transition white-text">
+                            <i class="fas fa-shopping-cart icons__icon icons__icon--shopping-cart"></i>
+                            <div class="icons__circle">
+                                <p class="icons__circle-value white-text"><span id="count-cart-index-nav--mobile">X</span></p>
+                            </div>
+                        </a>
+                        <a href="#" class="icons__link link-transition white-text">
+                            <i class="fas fa-user icons__icon icons__icon--log-in"></i>
+                        </a>
+                    </div> -->
+                </ul>
+
             </div>
         </nav>
-        <div class="header__aside">
+
+        <div class="header__aside header__aside--desktop">
             <ul class="header__direction direction">
                 <li class="direction__item">
                     <a href="#" class="direction__link white-text">Home <i class="fas fa-caret-right direction__icon"></i></a>
@@ -126,6 +128,17 @@
     </header>
 
 
+
+
+
+
+
+
+
+
+
+
+    <!-- Section product -->
 
     <section class="product section">
         <p class="products__title section__title">Products</p>
@@ -281,9 +294,10 @@
                         data-price="599.00">Add to basket</a></button>
 
 
-
-                    <button
-                        class="payment__button payment__button--2 button white-text"><a href="./order.html" class="payment__link">Make an order</a></button>
+                    <div class="payment__btn1-wrapper">
+                        <button
+                            class="payment__button payment__button--2 button white-text"><a href="./order.html" class="payment__link">Make an order</a></button>
+                    </div>
 
                 </div>
 
@@ -293,6 +307,10 @@
     </section>
 
 
+
+
+
+    <!-- Section testimonials -->
 
     <section class="testimonials section">
         <p class="testimonials__title section__title">Testimonials</p>
@@ -559,10 +577,17 @@
 
     <script src="../js/shoppingCart.js"></script>
     <script src="../dist/js/lightbox.js"></script>
+    <script src="../js/app-accessories.js"></script>
     <script src="../js/app.js"></script>
 
-    <script src="../js/app-accessories.js"></script>
+    <script>
 
+        $('.burger').on('click', function () {
+            $('.menu--mobile').toggleClass('menu--mobile--show');
+            $('.burger__icon').toggleClass('burger__icon--show');
+        })
+
+    </script>
 
 
 </body>

@@ -55,24 +55,10 @@ const checkPayment = () => {
     });
 };
 
-
-const showMenuTablet = () => {
-    $('.burger').on('click', function () {
-        $('.menu-tablet').toggleClass('menu-tablet--show');
-        $('.burger__icon').toggleClass('burger__icon--show');
-    });
-};
-
-
-
-
-
-
 const app = () => {
     toggleHeart();
     checkColor();
     checkPayment();
-    showMenuTablet();
 };
 
 app();

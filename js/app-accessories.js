@@ -7,7 +7,8 @@ new Glide('.accessories', {
             perView: 3
         },
         767: {
-            perView: 2
+            perView: 2,
+            gap: 0,
         }
     }
 }).mount()
