@@ -1,19 +1,19 @@
-@media screen and (max-width: 767px) and (orientation: portrait) {
+@media screen and (max-width: 1024px) {
 
     .section {
-        margin-top: 60px;
+        margin-top: 80px;
     }
 
-    .glide__arrows {
+    .glide__arrows--product {
         display: none;
     }
 
-    .header {
-        height: 100px;
+    .glide__arrows--accessories {
+        display: none;
     }
 
-    .navigation__content {
-        justify-content: space-between;
+    .logo {
+        flex: 1;
     }
 
     .menu--desktop {
@@ -28,9 +28,9 @@
         background-color: var(--bgc);
         flex-direction: column;
         align-items: center;
-        height: 100vh;
-        width: 100%;
-        padding: 100px 30px;
+        height: 50vh;
+        width: 50%;
+        padding: 60px 30px;
         border-left: none;
         z-index: 1;
         transition: transform 1s;
@@ -42,44 +42,33 @@
         transform: translateY(0);
     }
 
-    .header__search-form {
-        background-color: var(--bgc);
-        margin-bottom: 30px;
-        box-shadow: 0px 2px 7px 2px rgba(8, 30, 35, 0.2);
-        color: #fff;
-        width: 100%;
-        height: 40px;
-        flex: 0;
-    }
+    .menu__item {
+        text-transform: uppercase;
 
-    .form__input {
-        all: unset;
-        height: 40px;
         margin-right: 0;
-        color: #fff;
+        /* margin-left: 30px; */
+        margin-bottom: 30px;
     }
 
-    ::placeholder {
-        color: #fff;
+    .menu__item:nth-last-child(1) {
+        margin-bottom: 0;
     }
 
-    .form__icon:hover {
-        color: var(--blue-color);
-    }
-
-    .catalog--desktop {
-        display: none;
+    .menu__link {
+        font-size: 18px;
+        line-height: auto;
     }
 
     .catalog__link {
-        text-transform: uppercase;
         font-size: 18px;
         line-height: auto;
         padding-bottom: 30px;
         border-bottom: 1px solid var(--opacity-white-30);
         margin-bottom: 30px;
+        padding-left: 30px;
         width: 100%;
         text-align: center;
+        text-transform: uppercase;
     }
 
     .catalog__icon--mobile {
@@ -88,38 +77,28 @@
         margin-left: 10px;
     }
 
-    .menu__item {
-        text-transform: uppercase;
-        margin-right: 0;
-        width: 100%;
-        text-align: center;
-        margin-bottom: 10px;
-    }
-
-    .menu__item:nth-last-of-type(1) {
-        margin-bottom: 30px;
-        padding-bottom: 30px;
-        border-bottom: 1px solid var(--opacity-white-30);
-    }
-
-    .icons--desktop {
+    .header__search-form--mobile {
         display: none;
     }
 
     .icons--mobile {
-        display: block;
-        border-right: none;
-        padding-right: 0;
-        text-align: center;
-        display: flex;
-        align-self: stretch;
-        justify-content: center;
-        padding: 0 100px;
+        display: none;
     }
 
+    .catalog--desktop {
+        display: none;
+    }
 
-    .icons__link:nth-of-type(1) {
-        margin-left: 0;
+    .icons--desktop {
+        padding-right: 30px;
+        height: 40px;
+        border-right: 1px solid var(--opacity-white-30);
+        flex: 1;
+        text-align: right;
+    }
+
+    .icons__icon {
+        line-height: 40px;
     }
 
     .burger {
@@ -131,15 +110,11 @@
         justify-content: center;
     }
 
-    .header__aside--desktop {
-        display: none;
-    }
-
     .product__container {
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 360px 25vw auto auto auto;
-        grid-template-areas: "chair chair chair""image1 image2 image3""price price price""specifications specifications specifications""payment payment payment";
-        grid-gap: 10px;
+        grid-template-columns: 15vw 15vw 15vw auto;
+        grid-template-rows: 1fr auto 15vw auto;
+        grid-template-areas: "chair chair chair specifications""chair chair chair payment""image1 image2 image3 payment""price price price payment";
+        grid-gap: 20px;
         position: relative;
         padding-bottom: 60px;
     }
@@ -152,14 +127,13 @@
         text-transform: capitalize;
     }
 
+
     .product__img {
         height: 280px;
     }
 
-    .chair__info {
-        top: 20px;
-        left: 20px;
-        right: 20px;
+    .image__img {
+        height: 60px;
     }
 
     .chair__name-price {
@@ -217,86 +191,15 @@
     }
 
     .payment__buttons {
-        flex-direction: column;
-        position: static;
-    }
-
-    .payment__btn1-wrapper {
         position: absolute;
         bottom: 0;
         left: 0;
-        padding: 0 26px;
-    }
-
-    .payment__button--1 {
-        margin-right: 0;
-    }
-
-    .testimonials__glide-container {
-        padding: 0;
-    }
-
-    .testimonials__button {
-        margin-left: 0;
-    }
-
-    .testimonials {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .testimonials-slide__opinion {
-        flex-direction: column;
-        align-items: flex-end;
-    }
-
-    .testimonials-slide__stars {
-        order: 1;
-        margin-bottom: 5px;
-    }
-
-    .testimonials-slide__date {
-        order: 2;
-    }
-
-    .footer {
-        flex-direction: column;
-        padding: 60px 0;
-    }
-
-    .contacts__items {
-        display: none;
-    }
-
-    .footer__account {
-        margin-bottom: 30px;
-    }
-
-    .contacts__social-media--mobile {
-        display: flex;
-        margin: 0 60px;
-        padding-top: 40px;
-        border-top: 1px solid var(--opacity-white-30);
-        align-self: stretch;
-        justify-content: center;
-    }
-
-    .contacts__link:nth-last-of-type(1) .contacts__icon--social-media {
-        margin-right: 0;
-    }
-
-
-
-
-
-
-    .basket__container {
-        flex-direction: column;
-        align-items: stretch;
+        right: 0;
     }
 
     .basket__items {
         position: relative;
+        flex: 1;
     }
 
     .basket__item {
@@ -398,12 +301,9 @@
         display: block;
     }
 
-
     .summary {
         position: relative;
-        margin-left: 0;
         margin-bottom: 100px;
-        margin-top: 100px;
     }
 
     .summary__btn-check-wrapper {
@@ -412,6 +312,279 @@
         left: 0;
         width: 100%;
     }
+
+
+
+
+
+    .delivery__container {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "name details""number details""mail details""city details""street details""apartment details""confirm edit";
+        grid-gap: 20px;
+    }
+
+    .delivery__input {
+        font: 16px system-ui;
+        margin-right: 0;
+        padding: 20px 25px;
+        height: auto;
+        box-shadow: 0px 2px 7px 2px rgba(19, 53, 60, 0.15);
+        color: var(--opacity-font-color-50);
+    }
+
+    .delivery__input::placeholder {
+        color: var(--opacity-font-color-50);
+    }
+
+    .delivery__button {
+        padding: 0;
+        height: 40px;
+    }
+
+    .details__subtitle {
+        margin-bottom: 30px;
+    }
+
+    .details__text {
+        margin-bottom: 30px;
+    }
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 767px) and (orientation: portrait) {
+
+    .section {
+        margin-top: 60px;
+    }
+
+    .glide__arrows {
+        display: none;
+    }
+
+    .header {
+        height: 100px;
+    }
+
+    .navigation__content {
+        justify-content: space-between;
+    }
+
+    .menu--mobile {
+        display: flex;
+        position: fixed;
+        right: 0;
+        top: 0;
+        background-color: var(--bgc);
+        flex-direction: column;
+        align-items: center;
+        height: 100vh;
+        width: 100%;
+        padding: 100px 30px;
+        border-left: none;
+        z-index: 1;
+        transition: transform 1s;
+        transform: translateY(-100%);
+        justify-content: space-between;
+    }
+
+    .menu--mobile--show {
+        transform: translateY(0);
+    }
+
+    .header__search-form {
+        background-color: var(--bgc);
+        margin-bottom: 30px;
+        box-shadow: 0px 2px 7px 2px rgba(8, 30, 35, 0.2);
+        color: #fff;
+        width: 100%;
+        height: 40px;
+        flex: 0;
+    }
+
+    .form__input {
+        all: unset;
+        height: 40px;
+        margin-right: 0;
+        color: #fff;
+    }
+
+    ::placeholder {
+        color: #fff;
+    }
+
+    .form__icon:hover {
+        color: var(--blue-color);
+    }
+
+    .menu__item {
+        margin-right: 0;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .menu__item:nth-last-of-type(1) {
+        margin-bottom: 30px;
+        padding-bottom: 30px;
+        border-bottom: 1px solid var(--opacity-white-30);
+    }
+
+    .icons--desktop {
+        display: none;
+    }
+
+    .icons--mobile {
+        display: block;
+        border-right: none;
+        padding-right: 0;
+        text-align: center;
+        display: flex;
+        align-self: stretch;
+        justify-content: center;
+        padding: 0 100px;
+    }
+
+
+    .icons__link:nth-of-type(1) {
+        margin-left: 0;
+    }
+
+
+    .header__aside--desktop {
+        display: none;
+    }
+
+    .product__container {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 360px 25vw auto auto auto;
+        grid-template-areas: "chair chair chair""image1 image2 image3""price price price""specifications specifications specifications""payment payment payment";
+        grid-gap: 10px;
+        position: relative;
+        padding-bottom: 60px;
+    }
+
+    .product__img {
+        height: 280px;
+    }
+
+    .chair__info {
+        top: 20px;
+        left: 20px;
+        right: 20px;
+    }
+
+    .payment__buttons {
+        flex-direction: column;
+        position: static;
+    }
+
+    .payment__btn1-wrapper {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        padding: 0 26px;
+    }
+
+    .payment__button--1 {
+        margin-right: 0;
+    }
+
+    .testimonials__glide-container {
+        padding: 0;
+    }
+
+    .testimonials__button {
+        margin-left: 0;
+    }
+
+    .testimonials {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .testimonials-slide__opinion {
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .testimonials-slide__stars {
+        order: 1;
+        margin-bottom: 5px;
+    }
+
+    .testimonials-slide__date {
+        order: 2;
+    }
+
+    .footer {
+        flex-direction: column;
+        padding: 60px 0;
+    }
+
+    .contacts__items {
+        display: none;
+    }
+
+    .footer__account {
+        margin-bottom: 30px;
+    }
+
+    .contacts__social-media--mobile {
+        display: flex;
+        margin: 0 60px;
+        padding-top: 40px;
+        border-top: 1px solid var(--opacity-white-30);
+        align-self: stretch;
+        justify-content: center;
+    }
+
+    .contacts__link:nth-last-of-type(1) .contacts__icon--social-media {
+        margin-right: 0;
+    }
+
+
+
+
+
+
+    .basket__container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .summary {
+        margin-left: 0;
+        margin-top: 100px;
+    }
+
+
+
+
+
+
+
+
+
 
     .delivery__container {
         grid-template-columns: 1fr;
@@ -435,13 +608,15 @@
         color: var(--opacity-font-color-50);
     }
 
+
+
+
+
+
+
+
     .delivery__details {
         margin-bottom: 30px;
-    }
-
-    .delivery__button {
-        height: 40px;
-        padding: 0;
     }
 
 
